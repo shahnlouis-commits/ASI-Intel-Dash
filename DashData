@@ -1,1 +1,54 @@
-
+[
+  {
+    "type": "High Priority",
+    "countries": [
+      "Myanmar",
+      "USA"
+    ],
+    "category": "Regional Analysis",
+    "date": "2025-08-21",
+    "headline": "Myanmar Junta, asset or liability?",
+    "body": "US recognition and engagement with the military junta in Myanmar may seem like a great deal to access key minerals. Civil war in the country may make that a tough sell."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Global"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-08-24",
+    "headline": "Renewed Tariffs on Key Commodities",
+    "body": "A new round of protectionist tariffs on steel and aluminum from trade partners is causing price volatility and supply chain disruptions. Businesses should audit existing supplier contracts."
+  },
+  {
+    "type": "Forecast Alert",
+    "countries": [
+      "Global"
+    ],
+    "category": "Threat Forecasting",
+    "date": "2025-08-22",
+    "headline": "Cyber Threats Shift to AI-Enabled Social Engineering",
+    "body": "Adversaries are leveraging generative AI to create more sophisticated and convincing social engineering attacks. Companies need to update security protocols and employee training to counter this threat."
+  },
+  {
+    "type": "Medium Priority",
+    "countries": [
+      "EU",
+      "USA"
+    ],
+    "category": "Policy Changes",
+    "date": "2025-08-18",
+    "headline": "New Regulations for AI Governance",
+    "body": "The EU's recent AI Act is setting a global precedent for artificial intelligence governance, and its provisions may impact U.S. companies operating in Europe. Businesses should evaluate their AI usage for compliance."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "USA"
+    ],
+    "category": "Policy Changes",
+    "date": "2025-08-25",
+    "headline": "Interior Department Releases Draft 2025 Critical Minerals List",
+    "body": "The 2025 draft list includes 54 mineral commodities. On August 26, 2025, the draft List of Critical Minerals will be posted in the Federal Register for public comment for the next 30 days. Public comment is specifically welcomed on inclusion of metallurgical coal and uranium, whether other minerals should be added."
+  }
+]
