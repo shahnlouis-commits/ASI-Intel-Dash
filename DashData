@@ -2,6 +2,17 @@
 {
   "type": "Strategic Watch",
   "countries": [
+    "USA",
+    "China"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-08-26",
+  "headline": "U.S. and China Resume In-Person Trade Negotiations in Washington",
+  "body": "Senior officials from the U.S. and China have begun a new round of trade talks in Washington, marking the first in-person dialogue since the recent truce. The meetings aim to restore regular communication channels and address long-standing trade imbalances, with potential implications for global supply chain stability and technology policy."
+},
+{
+  "type": "Strategic Watch",
+  "countries": [
     "Canada",
     "Germany",
     "EU"
