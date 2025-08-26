@@ -1,5 +1,17 @@
 [
-  {
+{
+  "type": "Strategic Watch",
+  "countries": [
+    "Canada",
+    "Germany",
+    "EU"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-08-26",
+  "headline": "Canada and Germany Sign Critical Minerals and Energy Partnership",
+  "body": "Canada and Germany have formalized a partnership to strengthen critical mineral supply chains, with Germany seeking to reduce its reliance on single-source suppliers like China and Russia. The agreement encourages joint public financing of projects and cooperation on natural gas and hydrogen energy, bolstering supply chain resilience for both nations."
+} 
+{
     "type": "High Priority",
     "countries": [
       "Myanmar",
