@@ -1,5 +1,16 @@
 [
 {
+  "type": "High Priority",
+  "countries": [
+    "USA",
+    "India"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-08-27",
+  "headline": "U.S. Tariffs on Indian Goods Go Into Effect Today",
+  "body": "The U.S. has officially implemented a new 25% tariff on a broad range of goods from India, effective today. This brings the total tariff rate to 50%, and is expected to severely disrupt supply chains in key sectors like textiles, gems, and marine products."
+},
+{
   "type": "Strategic Watch",
   "countries": [
     "USA",
