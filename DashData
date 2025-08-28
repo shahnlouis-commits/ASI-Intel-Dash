@@ -1,5 +1,29 @@
 [
 {
+  "type": "Strategic Watch",
+  "countries": [
+    "Egypt",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-08-28",
+  "headline": "Egypt's Central Bank Cuts Rates Amid Global Trade and Inflation Risks",
+  "body": "The Central Bank of Egypt has reduced its policy rates by 200 basis points, citing a need to align with global monetary easing trends and support domestic growth. The decision, effective today, comes as the bank assesses ongoing risks from escalating geopolitical tensions and disruptions to global trade policy. The move is a direct response to global economic uncertainties and could affect the country's trade and investment flows."
+},
+{
+  "type": "High Priority",
+  "countries": [
+    "Iran",
+    "France",
+    "Germany",
+    "UK"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-08-28",
+  "headline": "European Powers Trigger Sanctions 'Snapback' Process Against Iran",
+  "body": "The foreign ministers of France, Germany, and the UK have jointly notified the UN Security Council that they are initiating a process to reimpose international sanctions on Iran. The move, known as a 'snapback,' is a direct response to Iran's ongoing violations of the 2015 nuclear agreement and opens a 30-day period during which previously lifted sanctions on Iran could be restored."
+},
+{
   "type": "High Priority",
   "countries": [
     "USA",
