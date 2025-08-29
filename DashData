@@ -2,6 +2,17 @@
 {
   "type": "High Priority",
   "countries": [
+    "USA",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-08-29",
+  "headline": "U.S. Appeals Court Rules Most of Trump's Tariffs Illegal, But Leaves Them in Place Pending Appeal",
+  "body": "The U.S. Court of Appeals for the Federal Circuit has ruled that President Trump exceeded his authority under the International Emergency Economic Powers Act (IEEPA) by imposing sweeping global tariffs. The court, in a 7-4 decision, upheld a lower court's finding that the tariffs are unconstitutional. However, the ruling was temporarily stayed to allow the administration time to appeal the decision to the Supreme Court, meaning the tariffs will remain in effect for now."
+},
+{
+  "type": "High Priority",
+  "countries": [
     "Global",
     "USA"
   ],
