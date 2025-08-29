@@ -1,5 +1,16 @@
 [
 {
+  "type": "High Priority",
+  "countries": [
+    "Global",
+    "USA"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-08-29",
+  "headline": "U.S. Suspends 'De Minimis' Rule, Imposing Duties on Low-Value Imports",
+  "body": "The White House has enacted an executive order that suspends the 'de minimis' exemption for all countries, effective today. This policy change eliminates the duty-free status for all imports under $800, which is a significant shift that will directly impact global e-commerce, logistics, and supply chains. All low-value shipments are now subject to applicable duties and taxes, regardless of origin."
+},
+{
   "type": "Strategic Watch",
   "countries": [
     "Egypt",
