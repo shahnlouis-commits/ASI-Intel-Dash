@@ -1,5 +1,17 @@
 [
 {
+  "type": "Strategic Watch",
+  "countries": [
+    "Guyana",
+    "USA",
+    "Venezuela"
+  ],
+  "category": "Regional Analysis",
+  "date": "2025-09-01",
+  "headline": "Guyana's President Wins Re-election, Signaling Policy Continuity Amidst Oil Boom",
+  "body": "Preliminary results from the September 1 election in Guyana indicate that incumbent President Irfaan Ali has secured a second term. The re-election of his party signals policy continuity for the country's oil and gas sector. The outcome reduces the risk of contract renegotiation for foreign companies like ExxonMobil but highlights ongoing risks from the border dispute with Venezuela and potential social unrest."
+},
+{
   "type": "High Priority",
   "countries": [
     "USA",
