@@ -10,6 +10,16 @@
   "body": "A police officer has been fired in Indonesia for involvement in the death of a bystander, but this action has failed to quell widespread and violent protests over economic hardship. The situation has resulted in looting and the burning of public buildings across multiple cities, posing a direct threat to logistics and creating a volatile business environment."
 },
 {
+  "type": "High Priority",
+  "countries": [
+    "Thailand"
+  ],
+  "category": "Regional Analysis",
+  "date": "2025-09-03",
+  "headline": "Thai Parliament Dissolved Amid Political Crisis",
+  "body": "Thailand's acting Prime Minister has dissolved parliament in an attempt to prevent a new government from being formed, forcing new elections. The political vacuum and escalating crisis have led to a downgrade in economic forecasts and raise the risk of a military coup. A prolonged period of instability could disrupt key supply chains in the automotive and electronics sectors and negatively impact foreign investment."
+},
+{
   "type": "Strategic Watch",
   "countries": [
     "Guyana",
