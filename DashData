@@ -1,5 +1,15 @@
 [
 {
+  "type": "Low Priority",
+  "countries": [
+    "Indonesia"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-09-04",
+  "headline": "Continued Widespread Protests and Instability in Indonesia",
+  "body": "A police officer has been fired in Indonesia for involvement in the death of a bystander, but this action has failed to quell widespread and violent protests over economic hardship. The situation has resulted in looting and the burning of public buildings across multiple cities, posing a direct threat to logistics and creating a volatile business environment."
+},
+{
   "type": "Strategic Watch",
   "countries": [
     "Guyana",
