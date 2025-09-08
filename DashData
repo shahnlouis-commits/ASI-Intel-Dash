@@ -1,4 +1,25 @@
 [
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "China",
+      "United States"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-09-08",
+    "headline": "China's Exports to US Plunge as Trade Tensions Escalate",
+    "body": "China's exports to the United States fell by 33% in August, contributing to the slowest overall export growth in six months. The decline signals a structural shift in trade flows due to weakening global demand and rising trade tensions, which could disrupt supply chains reliant on Chinese manufacturing and force a strategic re-evaluation of sourcing."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "France"
+    ],
+    "category": "Regional Analysis",
+    "date": "2025-09-08",
+    "headline": "France's Government Faces No-Confidence Vote Amid Budget Dispute",
+    "body": "The French government is at risk of collapse today as a no-confidence vote on a new budget is considered in the National Assembly. This political instability has raised concerns about a prolonged stalemate and its potential ripple effects across European financial markets, posing a direct threat to economic stability and the EU's second-largest economy."
+  },
 {
   "type": "Strategic Watch",
   "countries": [
