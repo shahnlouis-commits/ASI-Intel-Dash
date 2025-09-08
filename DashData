@@ -1,5 +1,15 @@
 [
   {
+  "type": "Strategic Watch",
+  "countries": [
+    "Japan"
+  ],
+  "category": "Regional Analysis",
+  "date": "2025-09-07",
+  "headline": "Japan's Prime Minister Announces Resignation",
+  "body": "Japanese Prime Minister Shigeru Ishiba has announced his resignation following significant political setbacks and mounting pressure within his party. This creates a period of political uncertainty and leadership transition. This instability could lead to delays in policy decisions and shifts in economic and trade strategies, impacting the world's fourth-largest economy."
+},
+{
     "type": "Strategic Watch",
     "countries": [
       "China",
