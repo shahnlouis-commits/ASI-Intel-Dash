@@ -1,5 +1,15 @@
 [
-  {
+{
+  "type": "High Priority",
+  "countries": [
+    "Nepal"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-09-09",
+  "headline": "Nepal's Prime Minister Resigns Amid Ongoing Violent Protests",
+  "body": "Widespread and violent anti-corruption protests, which began on September 8, have led to the resignation of Prime Minister K.P. Sharma Oli. Protesters have defied curfews, setting fire to the parliament building and other government offices. The Kathmandu International Airport has been temporarily closed and flights diverted. The ongoing civil unrest and disruptions to air and ground transport pose an immediate, severe risk to the movement of goods and operational stability."
+},  
+{
   "type": "Strategic Watch",
   "countries": [
     "Japan"
