@@ -1,5 +1,27 @@
 [
 {
+    "type": "High Priority",
+    "countries": [
+      "France"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-09-10",
+    "headline": "Nationwide 'Block Everything' Protests and Transport Chaos in France",
+    "body": "A nationwide 'Block Everything' protest movement, with health workers joining, is causing widespread transport chaos and street blockades in major French cities. The civil unrest has led to clashes with police and hundreds of arrests, posing a direct and immediate risk to logistics and supply chain operations within the country."
+  },
+  {
+    "type": "Forecast Alert",
+    "countries": [
+      "United States",
+      "China",
+      "India"
+    ],
+    "category": "Policy Changes",
+    "date": "2025-09-10",
+    "headline": "U.S. Proposes Sweeping New Tariffs on China and India to the EU",
+    "body": "The U.S. has proposed a coordinated effort with the European Union to impose sweeping new tariffs on China and India. The proposal, aimed at increasing pressure on Russia, signals a potential for a major shift in global trade relations and creates a new level of uncertainty for global supply chains in the technology, manufacturing, and textile sectors."
+  },
+{
   "type": "High Priority",
   "countries": [
     "Israel",
