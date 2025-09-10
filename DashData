@@ -2,6 +2,17 @@
 {
   "type": "High Priority",
   "countries": [
+    "Israel",
+    "Qatar"
+  ],
+  "category": "Regional Analysis",
+  "date": "2025-09-09",
+  "headline": "Israeli Strike in Qatar Escalates Tensions and Spikes Oil Prices",
+  "body": "Israel carried out a military strike in Qatar, targeting Hamas leaders in Doha. The attack has been condemned by Qatar as a violation of its sovereignty and has been called 'state terrorism.' The event has sent a jolt through global energy markets, with oil prices rising due to the increased risk of a wider conflict in the Middle East and its potential to disrupt critical shipping lanes."
+},
+{
+  "type": "High Priority",
+  "countries": [
     "Nepal"
   ],
   "category": "Supply Chain Risk",
