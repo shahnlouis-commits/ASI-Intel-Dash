@@ -1,4 +1,28 @@
 [
+ {
+    "type": "High Priority",
+    "countries": [
+      "United States",
+      "Yemen",
+      "Iran",
+      "Qatar"
+    ],
+    "category": "Policy Changes",
+    "date": "2025-09-11",
+    "headline": "U.S. Sanctions Houthi Financial Networks to Disrupt Red Sea Shipping",
+    "body": "The U.S. Department of the Treasury has announced new sanctions today, designating 32 individuals and entities and identifying four vessels tied to Houthi illicit revenue networks. This is the largest sanctions action to date targeting the group, and it aims to disrupt their ability to finance attacks on commercial shipping in the Red Sea, a critical global trade route."
+  },
+  {
+    "type": "Policy Changes",
+    "countries": [
+      "United States",
+      "China"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-09-11",
+    "headline": "U.S. Imposes New Tariffs on Chinese Chemical Imports",
+    "body": "The U.S. Department of Commerce has issued new antidumping and countervailing duty orders on hexamethylenetetramine (hexamine) from China. This official trade action imposes new tariffs on the chemical, which is used in industries from plastics to pharmaceuticals, and signals the ongoing fragmentation of global supply chains due to escalating trade tensions."
+  },
 {
     "type": "High Priority",
     "countries": [
