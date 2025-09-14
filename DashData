@@ -1,5 +1,28 @@
 [
- {
+{
+    "type": "Strategic Watch",
+    "countries": [
+      "Pakistan",
+      "Afghanistan"
+    ],
+    "category": "Regional Analysis",
+    "date": "2025-09-13",
+    "headline": "Pakistani Military Clashes with Militants Near Afghan Border",
+    "body": "Pakistani security forces engaged in a series of deadly clashes with militants from the Tehrik-i-Taliban Pakistan (TTP) in South Waziristan and Lower Dir. The attacks signal a rise in the TTP's strategic capabilities and highlight the ongoing security threat in the region, which endangers economic assets and poses a risk to key supply chains."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Qatar",
+      "Israel",
+      "Iran"
+    ],
+    "category": "Regional Analysis",
+    "date": "2025-09-14",
+    "headline": "Qatar Hosts Emergency Summit on Israeli Attack",
+    "body": "Qatar is hosting an emergency Arab-Islamic summit in Doha in response to Israel's September 9 attack on Hamas leadership. This diplomatic gathering is a significant geopolitical signal that could lead to a coordinated regional response, further escalating tensions and increasing the risk of a wider conflict that could disrupt global energy and shipping supply chains."
+  }, 
+{
     "type": "High Priority",
     "countries": [
       "United States",
