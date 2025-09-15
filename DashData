@@ -1,4 +1,25 @@
 [
+ {
+    "type": "Strategic Watch",
+    "countries": [
+      "United States",
+      "China"
+    ],
+    "category": "Policy Changes",
+    "date": "2025-09-15",
+    "headline": "USTR Seeks Public Comment on China Section 301 Tariffs",
+    "body": "The U.S. Trade Representative (USTR) has announced it is seeking public comments on a Section 301 investigation into China's acts, policies, and practices. This is a new phase of a crucial investigation that could lead to new tariffs or other trade actions, creating significant uncertainty and risk for supply chains and businesses operating in both nations."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "China"
+    ],
+    "category": "Policy Changes",
+    "date": "2025-09-12",
+    "headline": "China Unveils Major Energy Storage Action Plan for 2025-2027",
+    "body": "China's National Development and Reform Commission and National Energy Administration have released a new plan to rapidly scale up new-type energy storage. The action plan targets an installed capacity of over 180 million kilowatts by 2027, aiming to solidify China's lead in the global energy storage and battery supply chains. This policy change will drive significant investment and could reshape the international market for battery technology and related materials."
+  },
 {
     "type": "Strategic Watch",
     "countries": [
