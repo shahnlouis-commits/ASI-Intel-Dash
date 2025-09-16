@@ -1,5 +1,27 @@
 [
  {
+    "type": "Medium Priority",
+    "countries": [
+      "Ukraine",
+      "Russia"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-09-15",
+    "headline": "Ukrainian Drone Attacks on Russian Oil Infrastructure Escalate",
+    "body": "Ukrainian drones have struck a major oil refinery and an export port, signaling a new escalation in the conflict. The attacks have caused oil prices to rise and highlight a direct threat to the global energy supply chain and the stability of a key commodity market."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "China",
+      "United States"
+    ],
+    "category": "Policy Changes",
+    "date": "2025-09-15",
+    "headline": "China Accuses Nvidia of Antitrust Law Violation",
+    "body": "China's Ministry of Foreign Affairs has accused U.S. chipmaker Nvidia of breaking Chinese antitrust law. This new development introduces significant legal and regulatory uncertainty for a key player in the semiconductor supply chain and signals a new front in the ongoing U.S.-China technology war."
+  },
+{
     "type": "Strategic Watch",
     "countries": [
       "United States",
