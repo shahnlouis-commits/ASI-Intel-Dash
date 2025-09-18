@@ -1,5 +1,15 @@
 [
  {
+  "type": "Strategic Watch",
+  "countries": [
+    "United States"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-09-17",
+  "headline": "U.S. Government Opens New Inclusion Window for Steel and Aluminum Tariffs",
+  "body": "The U.S. Bureau of Industry and Security (BIS) has opened a new window for companies to request that their derivative steel and aluminum articles be included in a tariff exemption process. This is a new, official policy action that affects a core industrial supply chain. The notice was published today, and the submission window is from September 15, 2025, to September 29, 2025."
+},
+{
     "type": "Medium Priority",
     "countries": [
       "Ukraine",
@@ -79,7 +89,7 @@
     "body": "The U.S. Department of the Treasury has announced new sanctions today, designating 32 individuals and entities and identifying four vessels tied to Houthi illicit revenue networks. This is the largest sanctions action to date targeting the group, and it aims to disrupt their ability to finance attacks on commercial shipping in the Red Sea, a critical global trade route."
   },
   {
-    "type": "Policy Changes",
+    "type": "Medium Priority",
     "countries": [
       "United States",
       "China"
