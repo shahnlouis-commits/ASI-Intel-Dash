@@ -1,5 +1,18 @@
 [
  {
+  "type": "High Priority",
+  "countries": [
+    "Belgium",
+    "United Kingdom",
+    "Germany",
+    "European Union"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-09-21",
+  "headline": "Cyberattack Continues to Disrupt Major European Airports, Affecting Air Cargo and Travel",
+  "body": "A coordinated cyberattack has targeted the electronic systems of major European airports, including key hubs in Brussels, London, and Berlin. The attack has disrupted check-in and boarding systems, leading to widespread flight delays and cancellations. While passenger traffic is most visibly affected, the disruption also has significant implications for air cargo and supply chains, particularly for time-sensitive goods like pharmaceuticals and high-value electronics. The incident highlights the growing vulnerability of critical infrastructure to state-sponsored or criminal cyber threats, raising concerns about supply chain resilience across the continent. Early reports suggest the attack may be tied to a known threat actor, leading to speculation of a broader strategic campaign targeting Western infrastructure."
+},
+{
   "type": "Strategic Watch",
   "countries": [
     "United States"
