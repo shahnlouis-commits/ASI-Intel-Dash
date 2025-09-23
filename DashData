@@ -1,5 +1,16 @@
 [
  {
+  "type": "Forecast Alert",
+  "countries": [
+    "United States",
+    "Global"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-09-23",
+  "headline": "Major Financial Investment Greenlights Construction of Port Arthur LNG Phase 2, Boosting U.S. Export Capacity",
+  "body": "Sempra Infrastructure Partners and an investor consortium led by Blackstone Credit & Insurance have announced a final investment decision for the Port Arthur LNG Phase 2 project in the U.S. This marks the formal start of construction on a new LNG export facility. With an estimated capacity of 13 million tonnes per annum, this project is designed to significantly increase the United States' ability to export natural gas to global markets. This development signals a 'Forecast Alert' for global energy supply chains, as it will enhance energy security for importing nations and alter global trade flows in the coming years. The move is a strategic step to cement the U.S. as a major player in the global energy market and provides a new source for countries seeking to diversify their energy supplies."
+},
+{
   "type": "Strategic Watch",
   "countries": [
     "United States",
