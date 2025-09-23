@@ -1,5 +1,17 @@
 [
  {
+  "type": "Strategic Watch",
+  "countries": [
+    "United States",
+    "United Nations",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-09-23",
+  "headline": "UN General Assembly High-Level Week Kicks Off, Focusing on Global Supply Chain Resilience and Sustainable Development",
+  "body": "The United Nations General Assembly's annual High-Level Week has begun in New York. Today's opening sessions include discussions on international cooperation, climate change, and global economic stability. A central theme is the need for greater resilience in global supply chains, a topic driven by recent disruptions from conflicts and extreme weather events. The meeting brings together heads of state and ministers who will engage in bilateral and multilateral talks that could shape future trade agreements and policies on critical resources, marking a significant event for policy changes and strategic planning."
+},
+{
   "type": "High Priority",
   "countries": [
     "Belgium",
