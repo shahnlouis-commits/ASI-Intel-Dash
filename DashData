@@ -1,4 +1,47 @@
+
 [
+  {
+    "type": "Medium Priority",
+    "countries": [
+      "Italy",
+      "European Union"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-09-26",
+    "headline": "Nationwide Air Transport Strike Set to Disrupt Italian Airports and Air Cargo Operations",
+    "body": "A 24-hour nationwide strike, called by the CUB Trasporti and USB trade unions, is scheduled for Friday, September 26, specifically targeting the air transport sector. The walkout will involve airline crews, ground staff, and handling personnel at major hubs, including Milan Malpensa, Milan Linate, and Venice. This disruption mandates a 'Medium Priority' alert for contingency planning around air freight, especially for time-sensitive, high-value goods moving through Southern Europe."
+  },
+  {
+    "type": "Forecast Alert",
+    "countries": [
+      "Italy",
+      "European Union"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-10-02",
+    "headline": "Nationwide Rail Strike Planned for October 2-3, Threatening Cargo and Passenger Transit",
+    "body": "A 24-hour nationwide rail strike is planned to commence at 9 PM on Thursday, October 2, until 9 PM on Friday, October 3. This industrial action, called by the Cobas union, will affect regional, long-distance, and cargo rail services across the entire country. The event requires a 'Forecast Alert' for logistics managers relying on rail transport for freight or multimodal shipping to and from Italian ports and industrial centers, with cancellations and significant delays highly anticipated."
+  },
+  {
+    "type": "Medium Priority",
+    "countries": [
+      "Italy"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-10-13",
+    "headline": "Multiple Airport Walkouts Scheduled for October 13 in Central Italy",
+    "body": "Airport staff are scheduled to stage further walkouts on October 13 at key airports in Central Italy, specifically affecting **Rome Fiumicino**, **Pisa**, and **Florence**. The disruption is expected to impact flight schedules and airport operations. This is a recurring issue for the Italian transport sector and warrants a 'Medium Priority' alert for businesses using these regional hubs for specialized air cargo and passenger logistics."
+  },
+  {
+    "type": "Medium Priority",
+    "countries": [
+      "Italy"
+    ],
+    "category": "Supply Chain Risk",
+    "date": "2025-10-29",
+    "headline": "Swissport Ground Handlers at Milan Linate Airport to Strike Again on October 29",
+    "body": "Swissport Italia ground handling staff at **Milan Linate Airport** are scheduled to strike again for 24 hours on October 29. As Swissport handles a significant portion of ground operations, this targeted action at one of Italy's busiest regional airports will create delays in baggage handling, check-in, and air cargo processing. This repeated industrial action is a persistent 'Medium Priority' risk for regional air logistics."
+  },
 {
   "type": "High Priority",
   "countries": [
