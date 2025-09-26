@@ -1,6 +1,18 @@
 
 [
-  {
+ {
+  "type": "High Priority",
+  "countries": [
+    "United States",
+    "China",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-09-26",
+  "headline": "U.S. Initiates National Security Probe into Imports of Medical Supplies and Equipment",
+  "body": "Today, the U.S. Department of Commerce published notice confirming the launch of a Section 232 investigation into whether imports of **Personal Protective Equipment (PPE), medical consumables, and medical equipment** pose a threat to national security. The investigation explicitly cites concerns over **foreign nations weaponizing** their control over the supply of these critical items and the potential for foreign exploitation of the supply chain. This is a 'High Priority' alert for the highly globalized medical device and PPE supply chain, as a positive finding could lead to the imposition of sweeping tariffs similar to those on steel and aluminum, dramatically increasing procurement costs and forcing immediate supply chain diversification."
+},
+ {
     "type": "Medium Priority",
     "countries": [
       "Italy",
