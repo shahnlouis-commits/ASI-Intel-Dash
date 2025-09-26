@@ -1,4 +1,15 @@
 [
+{
+  "type": "High Priority",
+  "countries": [
+    "United States",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-09-25",
+  "headline": "U.S. Announces 100% Tariff on Imported Pharmaceuticals and 25% on Heavy Trucks, Effective October 1",
+  "body": "President Donald J. Trump today announced a new round of severe, targeted tariffs set to take effect on October 1. Key measures include a 100% tariff on all imported branded and patented pharmaceutical products (excluding companies actively building U.S. manufacturing plants) and a 25% tariff on imported heavy-duty trucks. Tariffs were also announced for kitchen cabinets, bathroom vanities (50%), and upholstered furniture (30%). The 100% duty on pharmaceuticals introduces an immediate 'High Priority' risk alert, as the U.S. imported $233 billion in such products in 2024, raising major concerns about medicine prices, supply chain stability, and hospital shortages. The truck tariff directly impacts the logistics and transportation sector, increasing capital costs for fleets across the U.S. and further contributing to inflationary pressures."
+},
  {
   "type": "Forecast Alert",
   "countries": [
