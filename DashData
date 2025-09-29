@@ -2,6 +2,18 @@
 {
   "type": "Strategic Watch",
   "countries": [
+    "United States",
+    "Malawi",
+    "Canada"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-09-29",
+  "headline": "U.S. Government Backs Malawi Rare Earth Mine with $4.6M Investment to Counter China's Dominance",
+  "body": "The **U.S. International Development Finance Corporation (DFC)** today announced an agreement to invest **$4.6 million** in the **Songwe Hill rare earth project** in **Malawi**, Africa. This funding, which follows earlier support from the European Union, is a direct strategic measure to diversify the global supply chain for critical minerals, such as dysprosium, terbium, and neodymium/praseodymium (NdPr), which are essential for defense technology and electric vehicles. This move highlights a major 'Strategic Watch' in the geopolitical race for non-Chinese sources of rare earth elements, indicating a commitment by Western nations to build parallel supply chains for materials where China currently maintains overwhelming market dominance."
+},
+{
+  "type": "Strategic Watch",
+  "countries": [
     "China",
     "Global"
   ],
