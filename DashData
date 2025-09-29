@@ -1,6 +1,16 @@
-
 [
- {
+{
+  "type": "Strategic Watch",
+  "countries": [
+    "China",
+    "Global"
+  ],
+  "category": "Supply Chain Risk",
+  "date": "2025-09-29",
+  "headline": "China Slashes Non-Ferrous Metals Growth Target, Signaling Global Shift from Volume to Strategic Control",
+  "body": "China's Ministry of Industry and Information Technology (MIIT) today announced a major policy pivot, drastically cutting its annual output growth target for **ten key non-ferrous metals** (including **copper** and **aluminum**) from a previous average of 5% to just **1.5%** for 2025 and 2026. This move is designed to curb **industrial overcapacity**, pursue **decarbonization**, and enhance **domestic efficiency** in line with strategic goals. This creates a 'Strategic Watch' alert, as the reduced growth target from the world's largest metal producer will tighten global supply of industrial base metals, likely supporting prices and accelerating the urgency for other nations to secure alternative, non-Chinese sourcing and processing capacity."
+},
+{
   "type": "High Priority",
   "countries": [
     "United States",
