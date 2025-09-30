@@ -2,6 +2,17 @@
 {
   "type": "Strategic Watch",
   "countries": [
+    "European Union",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-09-30",
+  "headline": "European Investment Bank Doubles Down on Green Transition to Boost Competitiveness and Energy Security",
+  "body": "The **European Investment Bank (EIB) Group** today adopted the second phase of its Climate Bank Roadmap, significantly stepping up its commitment to green investment. The plan explicitly focuses on enhancing Europe's **competitiveness** and **energy security** in response to volatile geopolitical and market conditions. Key actions include **doubling investment for climate change adaptation** and substantially increasing financing for **energy grids**, cleantech, and supply chain reinforcement. This 'Strategic Watch' alert signals a major influx of public capital into European cleantech and energy infrastructure, intending to make the EU less reliant on external suppliers for core energy needs and critical components."
+},
+{
+  "type": "Strategic Watch",
+  "countries": [
     "United States",
     "Malawi",
     "Canada"
