@@ -1,5 +1,16 @@
 [
 {
+  "type": "High Priority",
+  "countries": [
+    "United States",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-09-29",
+  "headline": "U.S. Commerce Dept. Adopts '50 Percent Rule,' Automatically Expanding Export Blacklist to Affiliates of Sanctioned Entities",
+  "body": "The **U.S. Department of Commerce’s Bureau of Industry and Security (BIS)** announced an Interim Final Rule (IFR) on September 29, immediately subjecting any non-U.S. entity that is **50% or more owned** (directly or indirectly, in the aggregate) by a party on the Entity List or Military End-User (MEU) List to the **same export control restrictions** as the parent company. This change aligns the Entity List with Treasury's long-standing sanctions practice, effectively closing a major loophole used for circumvention. The 'High Priority' designation is warranted because this move instantly and automatically expands the scope of the blacklist to potentially thousands of unlisted subsidiaries globally, necessitating immediate and intensive **due diligence and ownership screening** for all companies trading in U.S.-origin items."
+},
+{
   "type": "Strategic Watch",
   "countries": [
     "European Union",
