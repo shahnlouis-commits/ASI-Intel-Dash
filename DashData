@@ -1,5 +1,16 @@
 [
-
+{
+  "type": "High Priority",
+  "countries": [
+    "Ukraine",
+    "Russia",
+    "Global"
+  ],
+  "category": "Threat Forecasting",
+  "date": "2025-10-01",
+  "headline": "Zaporizhzhia Nuclear Plant Faces 'Critical' Risk After Longest External Power Outage Since War Began",
+  "body": "The Russia-occupied **Zaporizhzhia Nuclear Power Plant (ZNPP)**, Europe's largest, is in a 'critical' state, having been cut off from its external power supply for over a week—the longest such outage since the full-scale invasion began. The U.N. nuclear watchdog (**IAEA**) and Ukrainian President Zelenskyy both warned today that relying solely on emergency diesel generators is 'clearly not a sustainable situation' for cooling the reactors and spent fuel. Although the plant is currently stable, the failure of the backup systems could lead to fuel overheating, which is a significant and immediate **High Priority** risk of a major nuclear incident with severe, transnational consequences for health, regional energy production, and trade."
+},
 {
   "type": "High Priority",
   "countries": [
