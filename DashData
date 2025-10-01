@@ -1,91 +1,91 @@
 [
-{
-  "type": "High Priority",
-  "countries": [
-    "Ukraine",
-    "Russia",
-    "Global"
-  ],
-  "category": "Threat Forecasting",
-  "date": "2025-10-01",
-  "headline": "Zaporizhzhia Nuclear Plant Faces 'Critical' Risk After Longest External Power Outage Since War Began",
-  "body": "The Russia-occupied **Zaporizhzhia Nuclear Power Plant (ZNPP)**, Europe's largest, is in a 'critical' state, having been cut off from its external power supply for over a week—the longest such outage since the full-scale invasion began. The U.N. nuclear watchdog (**IAEA**) and Ukrainian President Zelenskyy both warned today that relying solely on emergency diesel generators is 'clearly not a sustainable situation' for cooling the reactors and spent fuel. Although the plant is currently stable, the failure of the backup systems could lead to fuel overheating, which is a significant and immediate **High Priority** risk of a major nuclear incident with severe, transnational consequences for health, regional energy production, and trade."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "United States",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-10-01",
-  "headline": "U.S. Government Shuts Down After Congress Fails to Pass Funding Bill",
-  "body": "The U.S. federal government entered a partial shutdown at midnight after Congress failed to pass a Continuing Resolution (CR) to fund operations. This immediately halts non-essential government services and furloughs an estimated 750,000 to 900,000 federal workers. The shutdown is a **High Priority** risk for businesses, creating a multi-faceted disruption: 1) **Supply Chain Enforcement:** Regulatory bodies like the FDA and EPA have curtailed non-essential inspections, potentially slowing imports and creating compliance uncertainty. 2) **Trade:** The suspension of critical economic data releases from agencies like the Census Bureau and BLS obscures the real-time health of the U.S. economy for global partners and financial markets. 3) **Government Contracts:** Companies heavily reliant on federal contracts face delayed payments and project suspensions, while key defense and security functions are running on limited staff, creating an environment of significant and immediate operational and financial uncertainty."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "United States",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-09-29",
-  "headline": "U.S. Commerce Dept. Adopts '50 Percent Rule,' Automatically Expanding Export Blacklist to Affiliates of Sanctioned Entities",
-  "body": "The **U.S. Department of Commerce’s Bureau of Industry and Security (BIS)** announced an Interim Final Rule (IFR) on September 29, immediately subjecting any non-U.S. entity that is **50% or more owned** (directly or indirectly, in the aggregate) by a party on the Entity List or Military End-User (MEU) List to the **same export control restrictions** as the parent company. This change aligns the Entity List with Treasury's long-standing sanctions practice, effectively closing a major loophole used for circumvention. The 'High Priority' designation is warranted because this move instantly and automatically expands the scope of the blacklist to potentially thousands of unlisted subsidiaries globally, necessitating immediate and intensive **due diligence and ownership screening** for all companies trading in U.S.-origin items."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "European Union",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-09-30",
-  "headline": "European Investment Bank Doubles Down on Green Transition to Boost Competitiveness and Energy Security",
-  "body": "The **European Investment Bank (EIB) Group** today adopted the second phase of its Climate Bank Roadmap, significantly stepping up its commitment to green investment. The plan explicitly focuses on enhancing Europe's **competitiveness** and **energy security** in response to volatile geopolitical and market conditions. Key actions include **doubling investment for climate change adaptation** and substantially increasing financing for **energy grids**, cleantech, and supply chain reinforcement. This 'Strategic Watch' alert signals a major influx of public capital into European cleantech and energy infrastructure, intending to make the EU less reliant on external suppliers for core energy needs and critical components."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "United States",
-    "Malawi",
-    "Canada"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-09-29",
-  "headline": "U.S. Government Backs Malawi Rare Earth Mine with $4.6M Investment to Counter China's Dominance",
-  "body": "The **U.S. International Development Finance Corporation (DFC)** today announced an agreement to invest **$4.6 million** in the **Songwe Hill rare earth project** in **Malawi**, Africa. This funding, which follows earlier support from the European Union, is a direct strategic measure to diversify the global supply chain for critical minerals, such as dysprosium, terbium, and neodymium/praseodymium (NdPr), which are essential for defense technology and electric vehicles. This move highlights a major 'Strategic Watch' in the geopolitical race for non-Chinese sources of rare earth elements, indicating a commitment by Western nations to build parallel supply chains for materials where China currently maintains overwhelming market dominance."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "China",
-    "Global"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-09-29",
-  "headline": "China Slashes Non-Ferrous Metals Growth Target, Signaling Global Shift from Volume to Strategic Control",
-  "body": "China's Ministry of Industry and Information Technology (MIIT) today announced a major policy pivot, drastically cutting its annual output growth target for **ten key non-ferrous metals** (including **copper** and **aluminum**) from a previous average of 5% to just **1.5%** for 2025 and 2026. This move is designed to curb **industrial overcapacity**, pursue **decarbonization**, and enhance **domestic efficiency** in line with strategic goals. This creates a 'Strategic Watch' alert, as the reduced growth target from the world's largest metal producer will tighten global supply of industrial base metals, likely supporting prices and accelerating the urgency for other nations to secure alternative, non-Chinese sourcing and processing capacity."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "United States",
-    "China",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-09-26",
-  "headline": "U.S. Initiates National Security Probe into Imports of Medical Supplies and Equipment",
-  "body": "Today, the U.S. Department of Commerce published notice confirming the launch of a Section 232 investigation into whether imports of **Personal Protective Equipment (PPE), medical consumables, and medical equipment** pose a threat to national security. The investigation explicitly cites concerns over **foreign nations weaponizing** their control over the supply of these critical items and the potential for foreign exploitation of the supply chain. This is a 'High Priority' alert for the highly globalized medical device and PPE supply chain, as a positive finding could lead to the imposition of sweeping tariffs similar to those on steel and aluminum, dramatically increasing procurement costs and forcing immediate supply chain diversification."
-},
- {
+  {
+    "type": "High Priority",
+    "countries": [
+      "Ukraine",
+      "Russia",
+      "Global"
+    ],
+    "category": "Structural & Environmental Risk",
+    "date": "2025-10-01",
+    "headline": "Zaporizhzhia Nuclear Plant Faces 'Critical' Risk After Longest External Power Outage Since War Began",
+    "body": "The Russia-occupied **Zaporizhzhia Nuclear Power Plant (ZNPP)**, Europe's largest, is in a 'critical' state, having been cut off from its external power supply for over a week—the longest such outage since the full-scale invasion began. The U.N. nuclear watchdog (**IAEA**) and Ukrainian President Zelenskyy both warned today that relying solely on emergency diesel generators is 'clearly not a sustainable situation' for cooling the reactors and spent fuel. Although the plant is currently stable, the failure of the backup systems could lead to fuel overheating, which is a significant and immediate **High Priority** risk of a major nuclear incident with severe, transnational consequences for health, regional energy production, and trade."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "United States",
+      "Global"
+    ],
+    "category": "Geopolitical Instability",
+    "date": "2025-10-01",
+    "headline": "U.S. Government Shuts Down After Congress Fails to Pass Funding Bill",
+    "body": "The U.S. federal government entered a partial shutdown at midnight after Congress failed to pass a Continuing Resolution (CR) to fund operations. This immediately halts non-essential government services and furloughs an estimated 750,000 to 900,000 federal workers. The shutdown is a **High Priority** risk for businesses, creating a multi-faceted disruption: 1) **Supply Chain Enforcement:** Regulatory bodies like the FDA and EPA have curtailed non-essential inspections, potentially slowing imports and creating compliance uncertainty. 2) **Trade:** The suspension of critical economic data releases from agencies like the Census Bureau and BLS obscures the real-time health of the U.S. economy for global partners and financial markets. 3) **Government Contracts:** Companies heavily reliant on federal contracts face delayed payments and project suspensions, while key defense and security functions are running on limited staff, creating an environment of significant and immediate operational and financial uncertainty."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "United States",
+      "Global"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-09-29",
+    "headline": "U.S. Commerce Dept. Adopts '50 Percent Rule,' Automatically Expanding Export Blacklist to Affiliates of Sanctioned Entities",
+    "body": "The **U.S. Department of Commerce’s Bureau of Industry and Security (BIS)** announced an Interim Final Rule (IFR) on September 29, immediately subjecting any non-U.S. entity that is **50% or more owned** (directly or indirectly, in the aggregate) by a party on the Entity List or Military End-User (MEU) List to the **same export control restrictions** as the parent company. This change aligns the Entity List with Treasury's long-standing sanctions practice, effectively closing a major loophole used for circumvention. The 'High Priority' designation is warranted because this move instantly and automatically expands the scope of the blacklist to potentially thousands of unlisted subsidiaries globally, necessitating immediate and intensive **due diligence and ownership screening** for all companies trading in U.S.-origin items."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "European Union",
+      "Global"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-09-30",
+    "headline": "European Investment Bank Doubles Down on Green Transition to Boost Competitiveness and Energy Security",
+    "body": "The **European Investment Bank (EIB) Group** today adopted the second phase of its Climate Bank Roadmap, significantly stepping up its commitment to green investment. The plan explicitly focuses on enhancing Europe's **competitiveness** and **energy security** in response to volatile geopolitical and market conditions. Key actions include **doubling investment for climate change adaptation** and substantially increasing financing for **energy grids**, cleantech, and supply chain reinforcement. This 'Strategic Watch' alert signals a major influx of public capital into European cleantech and energy infrastructure, intending to make the EU less reliant on external suppliers for core energy needs and critical components."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "United States",
+      "Malawi",
+      "Canada"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-09-29",
+    "headline": "U.S. Government Backs Malawi Rare Earth Mine with $4.6M Investment to Counter China's Dominance",
+    "body": "The **U.S. International Development Finance Corporation (DFC)** today announced an agreement to invest **$4.6 million** in the **Songwe Hill rare earth project** in **Malawi**, Africa. This funding, which follows earlier support from the European Union, is a direct strategic measure to diversify the global supply chain for critical minerals, such as dysprosium, terbium, and neodymium/praseodymium (NdPr), which are essential for defense technology and electric vehicles. This move highlights a major 'Strategic Watch' in the geopolitical race for non-Chinese sources of rare earth elements, indicating a commitment by Western nations to build parallel supply chains for materials where China currently maintains overwhelming market dominance."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "China",
+      "Global"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-09-29",
+    "headline": "China Slashes Non-Ferrous Metals Growth Target, Signaling Global Shift from Volume to Strategic Control",
+    "body": "China's Ministry of Industry and Information Technology (MIIT) today announced a major policy pivot, drastically cutting its annual output growth target for **ten key non-ferrous metals** (including **copper** and **aluminum**) from a previous average of 5% to just **1.5%** for 2025 and 2026. This move is designed to curb **industrial overcapacity**, pursue **decarbonization**, and enhance **domestic efficiency** in line with strategic goals. This creates a 'Strategic Watch' alert, as the reduced growth target from the world's largest metal producer will tighten global supply of industrial base metals, likely supporting prices and accelerating the urgency for other nations to secure alternative, non-Chinese sourcing and processing capacity."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "United States",
+      "China",
+      "Global"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-09-26",
+    "headline": "U.S. Initiates National Security Probe into Imports of Medical Supplies and Equipment",
+    "body": "Today, the U.S. Department of Commerce published notice confirming the launch of a Section 232 investigation into whether imports of **Personal Protective Equipment (PPE), medical consumables, and medical equipment** pose a threat to national security. The investigation explicitly cites concerns over **foreign nations weaponizing** their control over the supply of these critical items and the potential for foreign exploitation of the supply chain. This is a 'High Priority' alert for the highly globalized medical device and PPE supply chain, as a positive finding could lead to the imposition of sweeping tariffs similar to those on steel and aluminum, dramatically increasing procurement costs and forcing immediate supply chain diversification."
+  },
+  {
     "type": "Medium Priority",
     "countries": [
       "Italy",
       "European Union"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Structural & Environmental Risk",
     "date": "2025-09-26",
     "headline": "Nationwide Air Transport Strike Set to Disrupt Italian Airports and Air Cargo Operations",
     "body": "A 24-hour nationwide strike, called by the CUB Trasporti and USB trade unions, is scheduled for Friday, September 26, specifically targeting the air transport sector. The walkout will involve airline crews, ground staff, and handling personnel at major hubs, including Milan Malpensa, Milan Linate, and Venice. This disruption mandates a 'Medium Priority' alert for contingency planning around air freight, especially for time-sensitive, high-value goods moving through Southern Europe."
@@ -96,7 +96,7 @@
       "Italy",
       "European Union"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Structural & Environmental Risk",
     "date": "2025-10-02",
     "headline": "Nationwide Rail Strike Planned for October 2-3, Threatening Cargo and Passenger Transit",
     "body": "A 24-hour nationwide rail strike is planned to commence at 9 PM on Thursday, October 2, until 9 PM on Friday, October 3. This industrial action, called by the Cobas union, will affect regional, long-distance, and cargo rail services across the entire country. The event requires a 'Forecast Alert' for logistics managers relying on rail transport for freight or multimodal shipping to and from Italian ports and industrial centers, with cancellations and significant delays highly anticipated."
@@ -106,7 +106,7 @@
     "countries": [
       "Italy"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Structural & Environmental Risk",
     "date": "2025-10-13",
     "headline": "Multiple Airport Walkouts Scheduled for October 13 in Central Italy",
     "body": "Airport staff are scheduled to stage further walkouts on October 13 at key airports in Central Italy, specifically affecting **Rome Fiumicino**, **Pisa**, and **Florence**. The disruption is expected to impact flight schedules and airport operations. This is a recurring issue for the Italian transport sector and warrants a 'Medium Priority' alert for businesses using these regional hubs for specialized air cargo and passenger logistics."
@@ -116,75 +116,75 @@
     "countries": [
       "Italy"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Structural & Environmental Risk",
     "date": "2025-10-29",
     "headline": "Swissport Ground Handlers at Milan Linate Airport to Strike Again on October 29",
     "body": "Swissport Italia ground handling staff at **Milan Linate Airport** are scheduled to strike again for 24 hours on October 29. As Swissport handles a significant portion of ground operations, this targeted action at one of Italy's busiest regional airports will create delays in baggage handling, check-in, and air cargo processing. This repeated industrial action is a persistent 'Medium Priority' risk for regional air logistics."
   },
-{
-  "type": "High Priority",
-  "countries": [
-    "United States",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-09-25",
-  "headline": "U.S. Announces 100% Tariff on Imported Pharmaceuticals and 25% on Heavy Trucks, Effective October 1",
-  "body": "President Donald J. Trump today announced a new round of severe, targeted tariffs set to take effect on October 1. Key measures include a 100% tariff on all imported branded and patented pharmaceutical products (excluding companies actively building U.S. manufacturing plants) and a 25% tariff on imported heavy-duty trucks. Tariffs were also announced for kitchen cabinets, bathroom vanities (50%), and upholstered furniture (30%). The 100% duty on pharmaceuticals introduces an immediate 'High Priority' risk alert, as the U.S. imported $233 billion in such products in 2024, raising major concerns about medicine prices, supply chain stability, and hospital shortages. The truck tariff directly impacts the logistics and transportation sector, increasing capital costs for fleets across the U.S. and further contributing to inflationary pressures."
-},
- {
-  "type": "Forecast Alert",
-  "countries": [
-    "United States",
-    "Global"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-09-23",
-  "headline": "Major Financial Investment Greenlights Construction of Port Arthur LNG Phase 2, Boosting U.S. Export Capacity",
-  "body": "Sempra Infrastructure Partners and an investor consortium led by Blackstone Credit & Insurance have announced a final investment decision for the Port Arthur LNG Phase 2 project in the U.S. This marks the formal start of construction on a new LNG export facility. With an estimated capacity of 13 million tonnes per annum, this project is designed to significantly increase the United States' ability to export natural gas to global markets. This development signals a 'Forecast Alert' for global energy supply chains, as it will enhance energy security for importing nations and alter global trade flows in the coming years. The move is a strategic step to cement the U.S. as a major player in the global energy market and provides a new source for countries seeking to diversify their energy supplies."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "United States",
-    "United Nations",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-09-23",
-  "headline": "UN General Assembly High-Level Week Kicks Off, Focusing on Global Supply Chain Resilience and Sustainable Development",
-  "body": "The United Nations General Assembly's annual High-Level Week has begun in New York. Today's opening sessions include discussions on international cooperation, climate change, and global economic stability. A central theme is the need for greater resilience in global supply chains, a topic driven by recent disruptions from conflicts and extreme weather events. The meeting brings together heads of state and ministers who will engage in bilateral and multilateral talks that could shape future trade agreements and policies on critical resources, marking a significant event for policy changes and strategic planning."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "Belgium",
-    "United Kingdom",
-    "Germany",
-    "European Union"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-09-21",
-  "headline": "Cyberattack Continues to Disrupt Major European Airports, Affecting Air Cargo and Travel",
-  "body": "A coordinated cyberattack has targeted the electronic systems of major European airports, including key hubs in Brussels, London, and Berlin. The attack has disrupted check-in and boarding systems, leading to widespread flight delays and cancellations. While passenger traffic is most visibly affected, the disruption also has significant implications for air cargo and supply chains, particularly for time-sensitive goods like pharmaceuticals and high-value electronics. The incident highlights the growing vulnerability of critical infrastructure to state-sponsored or criminal cyber threats, raising concerns about supply chain resilience across the continent. Early reports suggest the attack may be tied to a known threat actor, leading to speculation of a broader strategic campaign targeting Western infrastructure."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "United States"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-09-17",
-  "headline": "U.S. Government Opens New Inclusion Window for Steel and Aluminum Tariffs",
-  "body": "The U.S. Bureau of Industry and Security (BIS) has opened a new window for companies to request that their derivative steel and aluminum articles be included in a tariff exemption process. This is a new, official policy action that affects a core industrial supply chain. The notice was published today, and the submission window is from September 15, 2025, to September 29, 2025."
-},
-{
+  {
+    "type": "High Priority",
+    "countries": [
+      "United States",
+      "Global"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-09-25",
+    "headline": "U.S. Announces 100% Tariff on Imported Pharmaceuticals and 25% on Heavy Trucks, Effective October 1",
+    "body": "President Donald J. Trump today announced a new round of severe, targeted tariffs set to take effect on October 1. Key measures include a 100% tariff on all imported branded and patented pharmaceutical products (excluding companies actively building U.S. manufacturing plants) and a 25% tariff on imported heavy-duty trucks. Tariffs were also announced for kitchen cabinets, bathroom vanities (50%), and upholstered furniture (30%). The 100% duty on pharmaceuticals introduces an immediate 'High Priority' risk alert, as the U.S. imported $233 billion in such products in 2024, raising major concerns about medicine prices, supply chain stability, and hospital shortages. The truck tariff directly impacts the logistics and transportation sector, increasing capital costs for fleets across the U.S. and further contributing to inflationary pressures."
+  },
+  {
+    "type": "Forecast Alert",
+    "countries": [
+      "United States",
+      "Global"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-09-23",
+    "headline": "Major Financial Investment Greenlights Construction of Port Arthur LNG Phase 2, Boosting U.S. Export Capacity",
+    "body": "Sempra Infrastructure Partners and an investor consortium led by Blackstone Credit & Insurance have announced a final investment decision for the Port Arthur LNG Phase 2 project in the U.S. This marks the formal start of construction on a new LNG export facility. With an estimated capacity of 13 million tonnes per annum, this project is designed to significantly increase the United States' ability to export natural gas to global markets. This development signals a 'Forecast Alert' for global energy supply chains, as it will enhance energy security for importing nations and alter global trade flows in the coming years. The move is a strategic step to cement the U.S. as a major player in the global energy market and provides a new source for countries seeking to diversify their energy supplies."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "United States",
+      "United Nations",
+      "Global"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-09-23",
+    "headline": "UN General Assembly High-Level Week Kicks Off, Focusing on Global Supply Chain Resilience and Sustainable Development",
+    "body": "The United Nations General Assembly's annual High-Level Week has begun in New York. Today's opening sessions include discussions on international cooperation, climate change, and global economic stability. A central theme is the need for greater resilience in global supply chains, a topic driven by recent disruptions from conflicts and extreme weather events. The meeting brings together heads of state and ministers who will engage in bilateral and multilateral talks that could shape future trade agreements and policies on critical resources, marking a significant event for policy changes and strategic planning."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "Belgium",
+      "United Kingdom",
+      "Germany",
+      "European Union"
+    ],
+    "category": "Security & Technology Threat",
+    "date": "2025-09-21",
+    "headline": "Cyberattack Continues to Disrupt Major European Airports, Affecting Air Cargo and Travel",
+    "body": "A coordinated cyberattack has targeted the electronic systems of major European airports, including key hubs in Brussels, London, and Berlin. The attack has disrupted check-in and boarding systems, leading to widespread flight delays and cancellations. While passenger traffic is most visibly affected, the disruption also has significant implications for air cargo and supply chains, particularly for time-sensitive goods like pharmaceuticals and high-value electronics. The incident highlights the growing vulnerability of critical infrastructure to state-sponsored or criminal cyber threats, raising concerns about supply chain resilience across the continent. Early reports suggest the attack may be tied to a known threat actor, leading to speculation of a broader strategic campaign targeting Western infrastructure."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "United States"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-09-17",
+    "headline": "U.S. Government Opens New Inclusion Window for Steel and Aluminum Tariffs",
+    "body": "The U.S. Bureau of Industry and Security (BIS) has opened a new window for companies to request that their derivative steel and aluminum articles be included in a tariff exemption process. This is a new, official policy action that affects a core industrial supply chain. The notice was published today, and the submission window is from September 15, 2025, to September 29, 2025."
+  },
+  {
     "type": "Medium Priority",
     "countries": [
       "Ukraine",
       "Russia"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Geopolitical Instability",
     "date": "2025-09-15",
     "headline": "Ukrainian Drone Attacks on Russian Oil Infrastructure Escalate",
     "body": "Ukrainian drones have struck a major oil refinery and an export port, signaling a new escalation in the conflict. The attacks have caused oil prices to rise and highlight a direct threat to the global energy supply chain and the stability of a key commodity market."
@@ -195,18 +195,18 @@
       "China",
       "United States"
     ],
-    "category": "Policy Changes",
+    "category": "Economic Warfare & Control",
     "date": "2025-09-15",
     "headline": "China Accuses Nvidia of Antitrust Law Violation",
     "body": "China's Ministry of Foreign Affairs has accused U.S. chipmaker Nvidia of breaking Chinese antitrust law. This new development introduces significant legal and regulatory uncertainty for a key player in the semiconductor supply chain and signals a new front in the ongoing U.S.-China technology war."
   },
-{
+  {
     "type": "Strategic Watch",
     "countries": [
       "United States",
       "China"
     ],
-    "category": "Policy Changes",
+    "category": "Economic Warfare & Control",
     "date": "2025-09-15",
     "headline": "USTR Seeks Public Comment on China Section 301 Tariffs",
     "body": "The U.S. Trade Representative (USTR) has announced it is seeking public comments on a Section 301 investigation into China's acts, policies, and practices. This is a new phase of a crucial investigation that could lead to new tariffs or other trade actions, creating significant uncertainty and risk for supply chains and businesses operating in both nations."
@@ -216,18 +216,18 @@
     "countries": [
       "China"
     ],
-    "category": "Policy Changes",
+    "category": "Regulatory & Policy Shift",
     "date": "2025-09-12",
     "headline": "China Unveils Major Energy Storage Action Plan for 2025-2027",
     "body": "China's National Development and Reform Commission and National Energy Administration have released a new plan to rapidly scale up new-type energy storage. The action plan targets an installed capacity of over 180 million kilowatts by 2027, aiming to solidify China's lead in the global energy storage and battery supply chains. This policy change will drive significant investment and could reshape the international market for battery technology and related materials."
   },
-{
+  {
     "type": "Strategic Watch",
     "countries": [
       "Pakistan",
       "Afghanistan"
     ],
-    "category": "Regional Analysis",
+    "category": "Geopolitical Instability",
     "date": "2025-09-13",
     "headline": "Pakistani Military Clashes with Militants Near Afghan Border",
     "body": "Pakistani security forces engaged in a series of deadly clashes with militants from the Tehrik-i-Taliban Pakistan (TTP) in South Waziristan and Lower Dir. The attacks signal a rise in the TTP's strategic capabilities and highlight the ongoing security threat in the region, which endangers economic assets and poses a risk to key supply chains."
@@ -239,12 +239,12 @@
       "Israel",
       "Iran"
     ],
-    "category": "Regional Analysis",
+    "category": "Geopolitical Instability",
     "date": "2025-09-14",
     "headline": "Qatar Hosts Emergency Summit on Israeli Attack",
     "body": "Qatar is hosting an emergency Arab-Islamic summit in Doha in response to Israel's September 9 attack on Hamas leadership. This diplomatic gathering is a significant geopolitical signal that could lead to a coordinated regional response, further escalating tensions and increasing the risk of a wider conflict that could disrupt global energy and shipping supply chains."
-  }, 
-{
+  },
+  {
     "type": "High Priority",
     "countries": [
       "United States",
@@ -252,7 +252,7 @@
       "Iran",
       "Qatar"
     ],
-    "category": "Policy Changes",
+    "category": "Economic Warfare & Control",
     "date": "2025-09-11",
     "headline": "U.S. Sanctions Houthi Financial Networks to Disrupt Red Sea Shipping",
     "body": "The U.S. Department of the Treasury has announced new sanctions today, designating 32 individuals and entities and identifying four vessels tied to Houthi illicit revenue networks. This is the largest sanctions action to date targeting the group, and it aims to disrupt their ability to finance attacks on commercial shipping in the Red Sea, a critical global trade route."
@@ -263,17 +263,17 @@
       "United States",
       "China"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Economic Warfare & Control",
     "date": "2025-09-11",
     "headline": "U.S. Imposes New Tariffs on Chinese Chemical Imports",
     "body": "The U.S. Department of Commerce has issued new antidumping and countervailing duty orders on hexamethylenetetramine (hexamine) from China. This official trade action imposes new tariffs on the chemical, which is used in industries from plastics to pharmaceuticals, and signals the ongoing fragmentation of global supply chains due to escalating trade tensions."
   },
-{
+  {
     "type": "High Priority",
     "countries": [
       "France"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Geopolitical Instability",
     "date": "2025-09-10",
     "headline": "Nationwide 'Block Everything' Protests and Transport Chaos in France",
     "body": "A nationwide 'Block Everything' protest movement, with health workers joining, is causing widespread transport chaos and street blockades in major French cities. The civil unrest has led to clashes with police and hundreds of arrests, posing a direct and immediate risk to logistics and supply chain operations within the country."
@@ -285,49 +285,49 @@
       "China",
       "India"
     ],
-    "category": "Policy Changes",
+    "category": "Economic Warfare & Control",
     "date": "2025-09-10",
     "headline": "U.S. Proposes Sweeping New Tariffs on China and India to the EU",
     "body": "The U.S. has proposed a coordinated effort with the European Union to impose sweeping new tariffs on China and India. The proposal, aimed at increasing pressure on Russia, signals a potential for a major shift in global trade relations and creates a new level of uncertainty for global supply chains in the technology, manufacturing, and textile sectors."
   },
-{
-  "type": "High Priority",
-  "countries": [
-    "Israel",
-    "Qatar"
-  ],
-  "category": "Regional Analysis",
-  "date": "2025-09-09",
-  "headline": "Israeli Strike in Qatar Escalates Tensions and Spikes Oil Prices",
-  "body": "Israel carried out a military strike in Qatar, targeting Hamas leaders in Doha. The attack has been condemned by Qatar as a violation of its sovereignty and has been called 'state terrorism.' The event has sent a jolt through global energy markets, with oil prices rising due to the increased risk of a wider conflict in the Middle East and its potential to disrupt critical shipping lanes."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "Nepal"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-09-09",
-  "headline": "Nepal's Prime Minister Resigns Amid Ongoing Violent Protests",
-  "body": "Widespread and violent anti-corruption protests, which began on September 8, have led to the resignation of Prime Minister K.P. Sharma Oli. Protesters have defied curfews, setting fire to the parliament building and other government offices. The Kathmandu International Airport has been temporarily closed and flights diverted. The ongoing civil unrest and disruptions to air and ground transport pose an immediate, severe risk to the movement of goods and operational stability."
-},  
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "Japan"
-  ],
-  "category": "Regional Analysis",
-  "date": "2025-09-07",
-  "headline": "Japan's Prime Minister Announces Resignation",
-  "body": "Japanese Prime Minister Shigeru Ishiba has announced his resignation following significant political setbacks and mounting pressure within his party. This creates a period of political uncertainty and leadership transition. This instability could lead to delays in policy decisions and shifts in economic and trade strategies, impacting the world's fourth-largest economy."
-},
-{
+  {
+    "type": "High Priority",
+    "countries": [
+      "Israel",
+      "Qatar"
+    ],
+    "category": "Geopolitical Instability",
+    "date": "2025-09-09",
+    "headline": "Israeli Strike in Qatar Escalates Tensions and Spikes Oil Prices",
+    "body": "Israel carried out a military strike in Qatar, targeting Hamas leaders in Doha. The attack has been condemned by Qatar as a violation of its sovereignty and has been called 'state terrorism.' The event has sent a jolt through global energy markets, with oil prices rising due to the increased risk of a wider conflict in the Middle East and its potential to disrupt critical shipping lanes."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "Nepal"
+    ],
+    "category": "Geopolitical Instability",
+    "date": "2025-09-09",
+    "headline": "Nepal's Prime Minister Resigns Amid Ongoing Violent Protests",
+    "body": "Widespread and violent anti-corruption protests, which began on September 8, have led to the resignation of Prime Minister K.P. Sharma Oli. Protesters have defied curfews, setting fire to the parliament building and other government offices. The Kathmandu International Airport has been temporarily closed and flights diverted. The ongoing civil unrest and disruptions to air and ground transport pose an immediate, severe risk to the movement of goods and operational stability."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Japan"
+    ],
+    "category": "Geopolitical Instability",
+    "date": "2025-09-07",
+    "headline": "Japan's Prime Minister Announces Resignation",
+    "body": "Japanese Prime Minister Shigeru Ishiba has announced his resignation following significant political setbacks and mounting pressure within his party. This creates a period of political uncertainty and leadership transition. This instability could lead to delays in policy decisions and shifts in economic and trade strategies, impacting the world's fourth-largest economy."
+  },
+  {
     "type": "Strategic Watch",
     "countries": [
       "China",
       "United States"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Economic Warfare & Control",
     "date": "2025-09-08",
     "headline": "China's Exports to US Plunge as Trade Tensions Escalate",
     "body": "China's exports to the United States fell by 33% in August, contributing to the slowest overall export growth in six months. The decline signals a structural shift in trade flows due to weakening global demand and rising trade tensions, which could disrupt supply chains reliant on Chinese manufacturing and force a strategic re-evaluation of sourcing."
@@ -337,130 +337,130 @@
     "countries": [
       "France"
     ],
-    "category": "Regional Analysis",
+    "category": "Geopolitical Instability",
     "date": "2025-09-08",
     "headline": "France's Government Faces No-Confidence Vote Amid Budget Dispute",
     "body": "The French government is at risk of collapse today as a no-confidence vote on a new budget is considered in the National Assembly. This political instability has raised concerns about a prolonged stalemate and its potential ripple effects across European financial markets, posing a direct threat to economic stability and the EU's second-largest economy."
   },
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "Indonesia"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-09-04",
-  "headline": "Continued Widespread Protests and Instability in Indonesia",
-  "body": "A police officer has been fired in Indonesia for involvement in the death of a bystander, but this action has failed to quell widespread and violent protests over economic hardship. The situation has resulted in looting and the burning of public buildings across multiple cities, posing a direct threat to logistics and creating a volatile business environment."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "Thailand"
-  ],
-  "category": "Regional Analysis",
-  "date": "2025-09-03",
-  "headline": "Thai Parliament Dissolved Amid Political Crisis",
-  "body": "Thailand's acting Prime Minister has dissolved parliament in an attempt to prevent a new government from being formed, forcing new elections. The political vacuum and escalating crisis have led to a downgrade in economic forecasts and raise the risk of a military coup. A prolonged period of instability could disrupt key supply chains in the automotive and electronics sectors and negatively impact foreign investment."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "Guyana",
-    "USA",
-    "Venezuela"
-  ],
-  "category": "Regional Analysis",
-  "date": "2025-09-01",
-  "headline": "Guyana's President Wins Re-election, Signaling Policy Continuity Amidst Oil Boom",
-  "body": "Preliminary results from the September 1 election in Guyana indicate that incumbent President Irfaan Ali has secured a second term. The re-election of his party signals policy continuity for the country's oil and gas sector. The outcome reduces the risk of contract renegotiation for foreign companies like ExxonMobil but highlights ongoing risks from the border dispute with Venezuela and potential social unrest."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "USA",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-08-29",
-  "headline": "U.S. Appeals Court Rules Most of Trump's Tariffs Illegal, But Leaves Them in Place Pending Appeal",
-  "body": "The U.S. Court of Appeals for the Federal Circuit has ruled that President Trump exceeded his authority under the International Emergency Economic Powers Act (IEEPA) by imposing sweeping global tariffs. The court, in a 7-4 decision, upheld a lower court's finding that the tariffs are unconstitutional. However, the ruling was temporarily stayed to allow the administration time to appeal the decision to the Supreme Court, meaning the tariffs will remain in effect for now."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "Global",
-    "USA"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-08-29",
-  "headline": "U.S. Suspends 'De Minimis' Rule, Imposing Duties on Low-Value Imports",
-  "body": "The White House has enacted an executive order that suspends the 'de minimis' exemption for all countries, effective today. This policy change eliminates the duty-free status for all imports under $800, which is a significant shift that will directly impact global e-commerce, logistics, and supply chains. All low-value shipments are now subject to applicable duties and taxes, regardless of origin."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "Egypt",
-    "Global"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-08-28",
-  "headline": "Egypt's Central Bank Cuts Rates Amid Global Trade and Inflation Risks",
-  "body": "The Central Bank of Egypt has reduced its policy rates by 200 basis points, citing a need to align with global monetary easing trends and support domestic growth. The decision, effective today, comes as the bank assesses ongoing risks from escalating geopolitical tensions and disruptions to global trade policy. The move is a direct response to global economic uncertainties and could affect the country's trade and investment flows."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "Iran",
-    "France",
-    "Germany",
-    "UK"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-08-28",
-  "headline": "European Powers Trigger Sanctions 'Snapback' Process Against Iran",
-  "body": "The foreign ministers of France, Germany, and the UK have jointly notified the UN Security Council that they are initiating a process to reimpose international sanctions on Iran. The move, known as a 'snapback,' is a direct response to Iran's ongoing violations of the 2015 nuclear agreement and opens a 30-day period during which previously lifted sanctions on Iran could be restored."
-},
-{
-  "type": "High Priority",
-  "countries": [
-    "USA",
-    "India"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-08-27",
-  "headline": "U.S. Tariffs on Indian Goods Go Into Effect Today",
-  "body": "The U.S. has officially implemented a new 25% tariff on a broad range of goods from India, effective today. This brings the total tariff rate to 50%, and is expected to severely disrupt supply chains in key sectors like textiles, gems, and marine products."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "USA",
-    "China"
-  ],
-  "category": "Policy Changes",
-  "date": "2025-08-26",
-  "headline": "U.S. and China Resume In-Person Trade Negotiations in Washington",
-  "body": "Senior officials from the U.S. and China have begun a new round of trade talks in Washington, marking the first in-person dialogue since the recent truce. The meetings aim to restore regular communication channels and address long-standing trade imbalances, with potential implications for global supply chain stability and technology policy."
-},
-{
-  "type": "Strategic Watch",
-  "countries": [
-    "Canada",
-    "Germany",
-    "EU"
-  ],
-  "category": "Supply Chain Risk",
-  "date": "2025-08-26",
-  "headline": "Canada and Germany Sign Critical Minerals and Energy Partnership",
-  "body": "Canada and Germany have formalized a partnership to strengthen critical mineral supply chains, with Germany seeking to reduce its reliance on single-source suppliers like China and Russia. The agreement encourages joint public financing of projects and cooperation on natural gas and hydrogen energy, bolstering supply chain resilience for both nations."
-},
-{
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Indonesia"
+    ],
+    "category": "Geopolitical Instability",
+    "date": "2025-09-04",
+    "headline": "Continued Widespread Protests and Instability in Indonesia",
+    "body": "A police officer has been fired in Indonesia for involvement in the death of a bystander, but this action has failed to quell widespread and violent protests over economic hardship. The situation has resulted in looting and the burning of public buildings across multiple cities, posing a direct threat to logistics and creating a volatile business environment."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Thailand"
+    ],
+    "category": "Geopolitical Instability",
+    "date": "2025-09-03",
+    "headline": "Thai Parliament Dissolved Amid Political Crisis",
+    "body": "Thailand's acting Prime Minister has dissolved parliament in an attempt to prevent a new government from being formed, forcing new elections. The political vacuum and escalating crisis have led to a downgrade in economic forecasts and raise the risk of a military coup. A prolonged period of instability could disrupt key supply chains in the automotive and electronics sectors and negatively impact foreign investment."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Guyana",
+      "USA",
+      "Venezuela"
+    ],
+    "category": "Geopolitical Instability",
+    "date": "2025-09-01",
+    "headline": "Guyana's President Wins Re-election, Signaling Policy Continuity Amidst Oil Boom",
+    "body": "Preliminary results from the September 1 election in Guyana indicate that incumbent President Irfaan Ali has secured a second term. The re-election of his party signals policy continuity for the country's oil and gas sector. The outcome reduces the risk of contract renegotiation for foreign companies like ExxonMobil but highlights ongoing risks from the border dispute with Venezuela and potential social unrest."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "USA",
+      "Global"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-08-29",
+    "headline": "U.S. Appeals Court Rules Most of Trump's Tariffs Illegal, But Leaves Them in Place Pending Appeal",
+    "body": "The U.S. Court of Appeals for the Federal Circuit has ruled that President Trump exceeded his authority under the International Emergency Economic Powers Act (IEEPA) by imposing sweeping global tariffs. The court, in a 7-4 decision, upheld a lower court's finding that the tariffs are unconstitutional. However, the ruling was temporarily stayed to allow the administration time to appeal the decision to the Supreme Court, meaning the tariffs will remain in effect for now."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "Global",
+      "USA"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-08-29",
+    "headline": "U.S. Suspends 'De Minimis' Rule, Imposing Duties on Low-Value Imports",
+    "body": "The White House has enacted an executive order that suspends the 'de minimis' exemption for all countries, effective today. This policy change eliminates the duty-free status for all imports under $800, which is a significant shift that will directly impact global e-commerce, logistics, and supply chains. All low-value shipments are now subject to applicable duties and taxes, regardless of origin."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Egypt",
+      "Global"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-08-28",
+    "headline": "Egypt's Central Bank Cuts Rates Amid Global Trade and Inflation Risks",
+    "body": "The Central Bank of Egypt has reduced its policy rates by 200 basis points, citing a need to align with global monetary easing trends and support domestic growth. The decision, effective today, comes as the bank assesses ongoing risks from escalating geopolitical tensions and disruptions to global trade policy. The move is a direct response to global economic uncertainties and could affect the country's trade and investment flows."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "Iran",
+      "France",
+      "Germany",
+      "UK"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-08-28",
+    "headline": "European Powers Trigger Sanctions 'Snapback' Process Against Iran",
+    "body": "The foreign ministers of France, Germany, and the UK have jointly notified the UN Security Council that they are initiating a process to reimpose international sanctions on Iran. The move, known as a 'snapback,' is a direct response to Iran's ongoing violations of the 2015 nuclear agreement and opens a 30-day period during which previously lifted sanctions on Iran could be restored."
+  },
+  {
+    "type": "High Priority",
+    "countries": [
+      "USA",
+      "India"
+    ],
+    "category": "Economic Warfare & Control",
+    "date": "2025-08-27",
+    "headline": "U.S. Tariffs on Indian Goods Go Into Effect Today",
+    "body": "The U.S. has officially implemented a new 25% tariff on a broad range of goods from India, effective today. This brings the total tariff rate to 50%, and is expected to severely disrupt supply chains in key sectors like textiles, gems, and marine products."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "USA",
+      "China"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-08-26",
+    "headline": "U.S. and China Resume In-Person Trade Negotiations in Washington",
+    "body": "Senior officials from the U.S. and China have begun a new round of trade talks in Washington, marking the first in-person dialogue since the recent truce. The meetings aim to restore regular communication channels and address long-standing trade imbalances, with potential implications for global supply chain stability and technology policy."
+  },
+  {
+    "type": "Strategic Watch",
+    "countries": [
+      "Canada",
+      "Germany",
+      "EU"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-08-26",
+    "headline": "Canada and Germany Sign Critical Minerals and Energy Partnership",
+    "body": "Canada and Germany have formalized a partnership to strengthen critical mineral supply chains, with Germany seeking to reduce its reliance on single-source suppliers like China and Russia. The agreement encourages joint public financing of projects and cooperation on natural gas and hydrogen energy, bolstering supply chain resilience for both nations."
+  },
+  {
     "type": "High Priority",
     "countries": [
       "Myanmar",
       "USA"
     ],
-    "category": "Regional Analysis",
+    "category": "Geopolitical Instability",
     "date": "2025-08-21",
     "headline": "Myanmar Junta, asset or liability?",
     "body": "US recognition and engagement with the military junta in Myanmar may seem like a great deal to access key minerals. Civil war in the country may make that a tough sell."
@@ -470,7 +470,7 @@
     "countries": [
       "Global"
     ],
-    "category": "Supply Chain Risk",
+    "category": "Economic Warfare & Control",
     "date": "2025-08-24",
     "headline": "Renewed Tariffs on Key Commodities",
     "body": "A new round of protectionist tariffs on steel and aluminum from trade partners is causing price volatility and supply chain disruptions. Businesses should audit existing supplier contracts."
@@ -480,7 +480,7 @@
     "countries": [
       "Global"
     ],
-    "category": "Threat Forecasting",
+    "category": "Security & Technology Threat",
     "date": "2025-08-22",
     "headline": "Cyber Threats Shift to AI-Enabled Social Engineering",
     "body": "Adversaries are leveraging generative AI to create more sophisticated and convincing social engineering attacks. Companies need to update security protocols and employee training to counter this threat."
@@ -491,7 +491,7 @@
       "EU",
       "USA"
     ],
-    "category": "Policy Changes",
+    "category": "Regulatory & Policy Shift",
     "date": "2025-08-18",
     "headline": "New Regulations for AI Governance",
     "body": "The EU's recent AI Act is setting a global precedent for artificial intelligence governance, and its provisions may impact U.S. companies operating in Europe. Businesses should evaluate their AI usage for compliance."
@@ -501,7 +501,7 @@
     "countries": [
       "USA"
     ],
-    "category": "Policy Changes",
+    "category": "Regulatory & Policy Shift",
     "date": "2025-08-25",
     "headline": "Interior Department Releases Draft 2025 Critical Minerals List",
     "body": "The 2025 draft list includes 54 mineral commodities. On August 26, 2025, the draft List of Critical Minerals will be posted in the Federal Register for public comment for the next 30 days. Public comment is specifically welcomed on inclusion of metallurgical coal and uranium, whether other minerals should be added."
