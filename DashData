@@ -1,4 +1,16 @@
 [
+
+{
+  "type": "High Priority",
+  "countries": [
+    "United States",
+    "Global"
+  ],
+  "category": "Policy Changes",
+  "date": "2025-10-01",
+  "headline": "U.S. Government Shuts Down After Congress Fails to Pass Funding Bill",
+  "body": "The U.S. federal government entered a partial shutdown at midnight after Congress failed to pass a Continuing Resolution (CR) to fund operations. This immediately halts non-essential government services and furloughs an estimated 750,000 to 900,000 federal workers. The shutdown is a **High Priority** risk for businesses, creating a multi-faceted disruption: 1) **Supply Chain Enforcement:** Regulatory bodies like the FDA and EPA have curtailed non-essential inspections, potentially slowing imports and creating compliance uncertainty. 2) **Trade:** The suspension of critical economic data releases from agencies like the Census Bureau and BLS obscures the real-time health of the U.S. economy for global partners and financial markets. 3) **Government Contracts:** Companies heavily reliant on federal contracts face delayed payments and project suspensions, while key defense and security functions are running on limited staff, creating an environment of significant and immediate operational and financial uncertainty."
+},
 {
   "type": "High Priority",
   "countries": [
