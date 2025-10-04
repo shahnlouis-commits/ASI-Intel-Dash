@@ -1,5 +1,15 @@
 [
-  {
+{
+    "type": "Strategic Watch",
+    "countries": [
+      "Japan"
+    ],
+    "category": "Regulatory & Policy Shift",
+    "date": "2025-10-04",
+    "headline": "Japan Elects Hardline Conservative Sanae Takaichi as LDP Leader, Signaling Hawkish Shift on Security and Trade",
+    "body": "Japan’s ruling Liberal Democratic Party (LDP) today elected former Economic Security Minister **Sanae Takaichi** as its new leader, positioning her to become the country's first female Prime Minister. Takaichi is a staunch conservative who advocates for closer security cooperation with Taiwan and has suggested revisiting trade and investment agreements with the United States. Her election signals a **Strategic Watch** for the Asia-Pacific region, as her government is expected to pursue a hawkish security agenda and potentially a more protectionist stance on trade and technology policy."
+  },  
+{
     "type": "Strategic Watch",
     "countries": [
       "Poland",
