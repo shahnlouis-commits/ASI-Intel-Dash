@@ -94,7 +94,7 @@ def reformat_with_gemini(raw_news_data, schema):
 def commit_to_github(new_data):
     """Updates the specified file in the GitHub repository."""
     print("Committing data to GitHub...")
-    g = Github(GH_TOKEN)
+    g = Github(GITHUB_PAT)
     repo = g.get_repo(REPO_NAME)
     
     # Try to get the existing file to obtain its SHA (required for updating)
@@ -122,7 +122,7 @@ def commit_to_github(new_data):
 
 # --- MAIN EXECUTION ---
 if __name__ == "__main__":
-    if not all([NEWS_API_KEY, GEMINI_API_KEY, GH_TOKEN]):
+    if not all([NEWS_API_KEY, GEMINI_API_KEY, GITHUB_PAT]):
         print("ERROR: One or more environment variables are missing. Check your GitHub Secrets.")
     else:
         try:
