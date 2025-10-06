@@ -28,10 +28,16 @@ jobs:
         # Installs the necessary libraries: requests, google-genai, PyGithub, jsonschema
         run: pip install requests google-genai PyGithub jsonschema
         
-      # IMPORTANT: Note that the Python script will automatically create the 
-      # DashData/data.json file if it doesn't exist yet, so we don't need a manual step here.
+      - name: 4. Debug Secrets Availability
+        run: |
+          if [ -z "${{ secrets.GH_TOKEN }}" ]; then
+            echo "Error: The GH_TOKEN secret is not available or is empty."
+            exit 1
+          else
+            echo "Success: The GH_TOKEN secret was found."
+          fip here.
         
-      - name: 4. Execute Automated Update Script
+      - name: 5. Execute Automated Update Script
         # Runs your core logic script, passing the encrypted secrets as environment variables
         run: python automated_update.py
         env:
