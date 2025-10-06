@@ -38,4 +38,4 @@ jobs:
           # Injecting Secrets (MUST match the names you used in GitHub Settings)
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # <-- Use the new, non-conflicting name
