@@ -12,9 +12,9 @@ NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 GITHUB_PAT = os.environ.get("GITHUB_PAT")
 
-REPO_NAME = "shahnlouis-commits/ASI-Intel-Dash"
+REPO_NAME = "shahnlouis-commits/ASI-Dash-2.0" # Using your consolidated private repo
 JSON_FILE_PATH = "DashData/data.json"
-DB_FILE_PATH = "DashData/archive.db"
+DB_FILE_PATH = "archive.db" # Storing DB in the root for simplicity
 BRANCH = "main"
 MODEL_NAME = "gemini-1.5-pro-latest"
 LIVE_ARTICLE_LIMIT = 150 # Max articles for the live JSON file
@@ -42,14 +42,12 @@ CATEGORY DEFINITIONS (Select ONE. Use 'n/a' for irrelevant articles):
 Your FINAL OUTPUT MUST be a valid JSON array. DO NOT include any text, headers, or explanations outside the JSON array itself.
 """
 
-# --- NEWS API QUERY CONFIGURATION ---
+# --- NEWS API QUERY CONFIGURATION (GNEWS) ---
 NEWS_API_CONFIG = {
-    'q': (
-        '(sanction OR tariff OR "trade war" OR election OR protest OR unrest OR coup OR geopolitical OR "military exercise" OR "export control" OR "supply chain" OR inflation OR "central bank" OR "energy security" OR cyberattack)'
-    ),
-    'language': 'en',
-    'sortBy': 'publishedAt',
-    'pageSize': 100 # Max allowed by the API
+    'q': '(sanction OR tariff OR "trade war" OR geopolitical OR election OR protest)',
+    'lang': 'en',
+    'country': 'us,gb,ca,au,cn,jp,de,fr', # Key countries for geopolitical news
+    'max': 100
 }
 
 # --- DATABASE FUNCTIONS ---
@@ -110,12 +108,11 @@ def get_all_articles_from_db(conn):
 # --- GITHUB AND API FUNCTIONS ---
 
 def fetch_news():
-    """Fetches geopolitical news from NewsAPI.org."""
-    print("Fetching news from NewsAPI.org...")
-    url = "https://newsapi.org/v2/everything"
-    headers = {'X-Api-Key': NEWS_API_KEY}
+    """Fetches geopolitical news from GNews.io."""
+    print("Fetching news from GNews.io...")
+    url = f"https://gnews.io/api/v4/search?token={NEWS_API_KEY}"
     params = NEWS_API_CONFIG
-    response = requests.get(url, headers=headers, params=params)
+    response = requests.get(url, params=params)
     response.raise_for_status()
     return response.json().get('articles', [])
 
@@ -124,6 +121,11 @@ def reformat_with_gemini(raw_news_data):
     if not raw_news_data:
         return []
     print(f"Reformatting {len(raw_news_data)} articles with Gemini ({MODEL_NAME})...")
+    # Rename GNews 'title' field to 'headline' for consistency in the database
+    for article in raw_news_data:
+        if 'title' in article:
+            article['headline'] = article.pop('title')
+
     user_prompt = f"RAW NEWS ARTICLES:\n{json.dumps(raw_news_data, indent=2)}"
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel(
@@ -195,8 +197,8 @@ if __name__ == "__main__":
                     commit_file_to_github(repo, DB_FILE_PATH, BRANCH, updated_db_content, db_sha)
                     print(f"Committed updated archive database to {DB_FILE_PATH}")
                 else:
-                    print("No new relevant articles found. Skipping commit.")
+                    print("No new relevant articles found after Gemini filtering.")
         else:
-            print("No new articles fetched from API. Skipping commit.")
+            print("No new articles fetched from GNews API. Skipping commit.")
         
         conn.close()
