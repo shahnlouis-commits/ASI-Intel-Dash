@@ -41,8 +41,12 @@ Your FINAL OUTPUT MUST be a valid JSON array strictly adhering to the provided J
 # --- NEWS API QUERY CONFIGURATION ---
 # TEST 1: Simplified Countries
 NEWS_QUERY_CONFIG = {
-    'countries': 'us,ca,gb,de', # Using a short, valid list
-    # 'keywords': 'sanction, instability, trade war...', # Commented out for this test
+    # This is the corrected list of countries:
+    'countries': 'ar,au,br,ca,cn,eg,fr,de,in,id,il,jp,sa,kr,tw,ua,gb,us',
+    
+    # You can now re-enable your keywords:
+    'keywords': 'sanction, instability, trade war, tariff, natural disaster, supply chain disruption, conflict, trade restriction',
+    
     'limit': 25, 
     'sort': 'published_desc'
 }
