@@ -1,0 +1,4 @@
+PyGithub
+google-generativeai
+requests
+jsonschema
