@@ -19,9 +19,7 @@ jobs:
           python-version: '3.11'
           
       - name: 3. Install Python dependencies
-        run: |
-          pip uninstall -y google google-api-python-client
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
         
       # ⬇️ ADD THESE NEW DEBUGGING STEPS ⬇️
       - name: 4. DEBUG - Show requirements.txt content
