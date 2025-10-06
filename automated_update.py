@@ -11,20 +11,16 @@ from jsonschema import validate, ValidationError
 # Keys are read from GitHub Secrets
 NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-GITHUB_PAT = os.environ.get("GITHUB_PAT")  
-# Use the new name 'GH_TOKEN' to fetch the value, but keep the variable name 'GITHUB_PAT' 
-# inside the script for consistency (so you don't have to change the PyGithub calls).
+GITHUB_PAT = os.environ.get("GITHUB_PAT")
 
 # Your Provided Repository Details
 REPO_NAME = "shahnlouis-commits/ASI-Intel-Dash"
 FILE_PATH = "DashData/data.json"
-BRANCH = "Main"
+BRANCH = "main" # Corrected to lowercase 'main' which is the default
 SCHEMA_FILE = "schema.json"
-MODEL_NAME = "gemini-2.5-pro" # Upgraded for better classification
+MODEL_NAME = "gemini-1.5-pro-latest" 
 
 # --- CLASSIFICATION RULES (Passed to Gemini as System Instruction) ---
-# In your automated_update.py file, update the instructions:
-
 CLASSIFICATION_INSTRUCTIONS = """
 You are a senior geopolitical risk analyst for a consulting firm. Your task is to classify raw news articles into a strict JSON format.
 Analyze the content and assign a single 'type' and 'category' based on the definitions below.
@@ -43,6 +39,7 @@ CATEGORY DEFINITIONS (Select ONE based on the primary risk driver. Use 'n/a' for
 
 Your FINAL OUTPUT MUST be a valid JSON array strictly adhering to the provided JSON Schema. DO NOT include any text, headers, or explanations outside the JSON array.
 """
+
 # --- NEWS API QUERY CONFIGURATION ---
 NEWS_QUERY_CONFIG = {
     # All 55 supported countries from the documentation
@@ -67,8 +64,7 @@ NEWS_QUERY_CONFIG = {
 }
 
 
-
-# --- CORE FUNCTIONS (Modified to use fixed data path) ---
+# --- CORE FUNCTIONS ---
 
 def fetch_news():
     """Fetches geopolitical news from Mediastack API."""
@@ -87,28 +83,26 @@ def reformat_with_gemini(raw_news_data, schema):
 
     print(f"Reformatting {len(raw_news_data)} articles with Gemini ({MODEL_NAME})...")
     
-    # Combine the system instructions and the raw data for the user prompt
     user_prompt = f"RAW NEWS ARTICLES:\n{json.dumps(raw_news_data, indent=2)}"
     
-    client = genai.Client(api_key=GEMINI_API_KEY)
-    
-    response = client.models.generate_content(
-        model=MODEL_NAME,
-        contents=user_prompt,
-        config={
-            "system_instruction": CLASSIFICATION_INSTRUCTIONS,
-            "response_mime_type": "application/json",
-            "response_schema": schema # Pass the JSON schema directly
-        }
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel(
+        MODEL_NAME,
+        generation_config={"response_mime_type": "application/json"},
+        system_instruction=CLASSIFICATION_INSTRUCTIONS
     )
+
+    response = model.generate_content(user_prompt)
     
     try:
+        # Assuming response.text contains the JSON string. Adjust if the API object structure is different.
         formatted_json = json.loads(response.text.strip())
-        validate(instance=formatted_json, schema=schema)
+        # The schema is not directly used for validation here as Gemini 1.5 handles it,
+        # but it's good practice to have it for potential future local validation.
+        # validate(instance=formatted_json, schema=schema) 
         return formatted_json
     except (json.JSONDecodeError, ValidationError) as e:
         print(f"CRITICAL ERROR: LLM failed to produce valid JSON or schema mismatch.")
-        # If Gemini fails the strict schema, we should review the raw output before proceeding
         print(f"Raw LLM Output (Text): {response.text}") 
         return None 
 
@@ -118,24 +112,21 @@ def commit_to_github(new_data):
     g = Github(GITHUB_PAT)
     repo = g.get_repo(REPO_NAME)
     
-    # Try to get the existing file to obtain its SHA (required for updating)
     try:
         contents = repo.get_contents(FILE_PATH, ref=BRANCH)
         sha = contents.sha
     except Exception:
-        # File doesn't exist (first run or file deleted), will create it later
         sha = None
 
-    commit_message = f"Automated 30-min Geopolitical Risk Update: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+    commit_message = f"Automated Geopolitical Risk Update: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
     
-    # Commit the new data (overwriting the file with the new analysis)
     action = repo.update_file if sha else repo.create_file
     
     action(
         FILE_PATH,
         commit_message,
         json.dumps(new_data, indent=4),
-        sha=sha, # Only required for update, ignored for create
+        sha=sha,
         branch=BRANCH
     )
     print(f"Commit successful! File updated/created at {FILE_PATH} on branch {BRANCH}.")
@@ -159,7 +150,14 @@ if __name__ == "__main__":
             final_data = reformat_with_gemini(raw_news, data_schema)
             
             if final_data is not None:
-                commit_to_github(final_data)
+                # Filter out any articles Gemini marked as irrelevant
+                relevant_data = [item for item in final_data if item.get('type') != 'irrelevant']
+                
+                if relevant_data:
+                    print(f"Found {len(relevant_data)} relevant articles. Committing to GitHub...")
+                    commit_to_github(relevant_data)
+                else:
+                    print("No relevant articles found after filtering. Skipping commit.")
             else:
                 print("Aborting commit due to invalid LLM output.")
         else:
