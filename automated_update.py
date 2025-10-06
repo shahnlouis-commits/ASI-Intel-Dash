@@ -11,7 +11,7 @@ from jsonschema import validate, ValidationError
 # Keys are read from GitHub Secrets
 NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-GITHUB_PAT = os.environ.get("GH_TOKEN") 
+GITHUB_PAT = os.environ.get("GITHUB_PAT") 
 # Use the new name 'GH_TOKEN' to fetch the value, but keep the variable name 'GITHUB_PAT' 
 # inside the script for consistency (so you don't have to change the PyGithub calls).
 
