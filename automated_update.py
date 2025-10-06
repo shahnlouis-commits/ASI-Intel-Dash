@@ -39,17 +39,28 @@ CATEGORY DEFINITIONS (Select ONE based on the primary risk driver):
 Your FINAL OUTPUT MUST be a valid JSON array strictly adhering to the provided JSON Schema. DO NOT include any text, headers, or explanations outside the JSON array.
 """
 # --- NEWS API QUERY CONFIGURATION ---
-# TEST 1: Simplified Countries
 NEWS_QUERY_CONFIG = {
-    # This is the corrected list of countries:
-    'countries': 'ar,au,br,ca,cn,eg,fr,de,in,id,il,jp,sa,kr,tw,ua,gb,us',
+    # All 55 supported countries from the documentation
+    'countries': 'ar,au,at,be,br,bg,ca,cn,co,cz,eg,fr,de,gr,hk,hu,in,id,ie,il,it,jp,lv,lt,my,mx,ma,nl,nz,ng,no,ph,pl,pt,ro,sa,rs,sg,sk,si,za,kr,se,ch,tw,th,tr,ae,ua,gb,us,ve',
     
-    # You can now re-enable your keywords:
-    'keywords': 'sanction, instability, trade war, tariff, natural disaster, supply chain disruption, conflict, trade restriction',
+    # Expanded list of keywords for broader coverage
+    'keywords': (
+        # Original Keywords
+        'sanction,instability,trade war,tariff,natural disaster,supply chain disruption,conflict,trade restriction,'
+        # Geopolitical & Diplomatic
+        'geopolitical tension,election,protest,unrest,coup,sovereignty,border dispute,military exercise,'
+        # Economic & Financial
+        'economic policy,inflation,recession,central bank,interest rates,debt crisis,market volatility,export control,'
+        # Supply Chain & Resources
+        'energy security,food security,critical minerals,port congestion,labor strike,'
+        # Cyber & Technology
+        'cyberattack,disinformation,espionage,semiconductor'
+    ),
     
     'limit': 25, 
     'sort': 'published_desc'
 }
+
 
 
 # --- CORE FUNCTIONS (Modified to use fixed data path) ---
