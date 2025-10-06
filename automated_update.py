@@ -39,9 +39,10 @@ CATEGORY DEFINITIONS (Select ONE based on the primary risk driver):
 Your FINAL OUTPUT MUST be a valid JSON array strictly adhering to the provided JSON Schema. DO NOT include any text, headers, or explanations outside the JSON array.
 """
 # --- NEWS API QUERY CONFIGURATION ---
+# TEST 1: Simplified Countries
 NEWS_QUERY_CONFIG = {
-    'countries': 'ar,au,br,ca,cn,eg,fr,de,in,id,ir,iq,il,jp,kp,sa,ru,kr,tw,ua,uk,us', # Expanded global list
-    'keywords': 'sanction, instability, trade war, tariff, natural disaster, supply chain disruption, conflict, trade restriction',
+    'countries': 'us,ca,gb,de', # Using a short, valid list
+    # 'keywords': 'sanction, instability, trade war...', # Commented out for this test
     'limit': 25, 
     'sort': 'published_desc'
 }
