@@ -3,7 +3,7 @@ import json
 import base64
 import requests
 import sqlite3
-from google import genai
+import google.generativeai as genai # <-- CHANGE THIS LINE
 from github import Github, GithubException
 from datetime import datetime
 
