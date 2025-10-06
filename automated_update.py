@@ -3,7 +3,7 @@ import json
 import base64
 import requests
 import sqlite3
-import google.generativeai as genai # <-- CHANGE THIS LINE
+import google.generativeai as genai
 from github import Github, GithubException
 from datetime import datetime
 
@@ -43,11 +43,13 @@ Your FINAL OUTPUT MUST be a valid JSON array. DO NOT include any text, headers, 
 """
 
 # --- NEWS API QUERY CONFIGURATION ---
-NEWS_QUERY_CONFIG = {
-    'countries': 'ar,au,at,be,br,bg,ca,cn,co,cz,eg,fr,de,gr,hk,hu,in,id,ie,il,it,jp,lv,lt,my,mx,ma,nl,nz,ng,no,ph,pl,pt,ro,sa,rs,sg,sk,si,za,kr,se,ch,tw,th,tr,ae,ua,gb,us,ve',
-    'keywords': ('sanction,instability,trade war,tariff,natural disaster,supply chain disruption,conflict,trade restriction,geopolitical tension,election,protest,unrest,coup,sovereignty,border dispute,military exercise,economic policy,inflation,recession,central bank,interest rates,debt crisis,market volatility,export control,energy security,food security,critical minerals,port congestion,labor strike,cyberattack,disinformation,espionage,semiconductor'),
-    'limit': 25,
-    'sort': 'published_desc'
+NEWS_API_CONFIG = {
+    'q': (
+        '(sanction OR tariff OR "trade war" OR election OR protest OR unrest OR coup OR geopolitical OR "military exercise" OR "export control" OR "supply chain" OR inflation OR "central bank" OR "energy security" OR cyberattack)'
+    ),
+    'language': 'en',
+    'sortBy': 'publishedAt',
+    'pageSize': 100 # Max allowed by the API
 }
 
 # --- DATABASE FUNCTIONS ---
@@ -72,14 +74,13 @@ def add_articles_to_db(conn, articles):
     cursor = conn.cursor()
     new_articles_count = 0
     for article in articles:
-        # The headline is the PRIMARY KEY, so INSERT OR IGNORE prevents duplicates
         cursor.execute('''
             INSERT OR IGNORE INTO articles (headline, type, countries, category, date, body)
             VALUES (?, ?, ?, ?, ?, ?)
         ''', (
             article['headline'],
             article['type'],
-            json.dumps(article['countries']), # Store list as JSON string
+            json.dumps(article['countries']),
             article['category'],
             article['date'],
             article['body']
@@ -94,13 +95,12 @@ def get_all_articles_from_db(conn):
     cursor = conn.cursor()
     cursor.execute("SELECT headline, type, countries, category, date, body FROM articles ORDER BY date DESC")
     rows = cursor.fetchall()
-    # Convert rows back to list of dictionaries
     articles = []
     for row in rows:
         articles.append({
             "headline": row[0],
             "type": row[1],
-            "countries": json.loads(row[2]), # Convert JSON string back to list
+            "countries": json.loads(row[2]),
             "category": row[3],
             "date": row[4],
             "body": row[5]
@@ -110,14 +110,14 @@ def get_all_articles_from_db(conn):
 # --- GITHUB AND API FUNCTIONS ---
 
 def fetch_news():
-    """Fetches geopolitical news from Mediastack API."""
-    print("Fetching news from Mediastack...")
-    url = "http://api.mediastack.com/v1/news"
-    params = {**NEWS_QUERY_CONFIG, 'access_key': NEWS_API_KEY}
-    response = requests.get(url, params=params)
+    """Fetches geopolitical news from NewsAPI.org."""
+    print("Fetching news from NewsAPI.org...")
+    url = "https://newsapi.org/v2/everything"
+    headers = {'X-Api-Key': NEWS_API_KEY}
+    params = NEWS_API_CONFIG
+    response = requests.get(url, headers=headers, params=params)
     response.raise_for_status()
-    return response.json().get('data', [])
-
+    return response.json().get('articles', [])
 
 def reformat_with_gemini(raw_news_data):
     """Feeds raw data into Gemini to reformat and extract risk data."""
@@ -146,7 +146,7 @@ def get_file_from_github(repo, path, branch):
         return file_content.decoded_content, file_content.sha
     except GithubException as e:
         if e.status == 404:
-            return None, None # File doesn't exist
+            return None, None
         raise
 
 def commit_file_to_github(repo, path, branch, content, sha):
