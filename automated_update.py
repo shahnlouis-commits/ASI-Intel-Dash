@@ -4,7 +4,7 @@ import base64
 import requests
 import sqlite3
 import google.generativeai as genai
-from github import Github, GithubException
+from github import Github, Auth, GithubException # Added Auth
 from datetime import datetime
 
 # --- CONFIGURATION ---
@@ -12,12 +12,12 @@ NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 GITHUB_PAT = os.environ.get("GITHUB_PAT")
 
-REPO_NAME = "shahnlouis-commits/ASI-Dash-2.0" # Using your consolidated private repo
+REPO_NAME = "shahnlouis-commits/ASI-Dash-2.0"
 JSON_FILE_PATH = "DashData/data.json"
-DB_FILE_PATH = "archive.db" # Storing DB in the root for simplicity
+DB_FILE_PATH = "archive.db"
 BRANCH = "main"
-MODEL_NAME = "gemini-1.5-pro-latest"
-LIVE_ARTICLE_LIMIT = 150 # Max articles for the live JSON file
+MODEL_NAME = "gemini-1.5-pro" # <-- CORRECTED THIS LINE
+LIVE_ARTICLE_LIMIT = 150
 
 # --- CLASSIFICATION RULES ---
 CLASSIFICATION_INSTRUCTIONS = """
@@ -46,29 +46,22 @@ Your FINAL OUTPUT MUST be a valid JSON array. DO NOT include any text, headers, 
 NEWS_API_CONFIG = {
     'q': '(sanction OR tariff OR "trade war" OR geopolitical OR election OR protest)',
     'lang': 'en',
-    'country': 'us,gb,ca,au,cn,jp,de,fr', # Key countries for geopolitical news
+    'country': 'us,gb,ca,au,cn,jp,de,fr',
     'max': 100
 }
 
 # --- DATABASE FUNCTIONS ---
-
+# ... (These functions are correct and do not need to be changed)
 def init_db(conn):
-    """Initializes the database table if it doesn't exist."""
     cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS articles (
-            headline TEXT PRIMARY KEY,
-            type TEXT,
-            countries TEXT,
-            category TEXT,
-            date TEXT,
-            body TEXT
-        )
-    ''')
+            headline TEXT PRIMARY KEY, type TEXT, countries TEXT,
+            category TEXT, date TEXT, body TEXT
+        )''')
     conn.commit()
 
 def add_articles_to_db(conn, articles):
-    """Adds new articles to the database, ignoring duplicates."""
     cursor = conn.cursor()
     new_articles_count = 0
     for article in articles:
@@ -76,39 +69,28 @@ def add_articles_to_db(conn, articles):
             INSERT OR IGNORE INTO articles (headline, type, countries, category, date, body)
             VALUES (?, ?, ?, ?, ?, ?)
         ''', (
-            article['headline'],
-            article['type'],
-            json.dumps(article['countries']),
-            article['category'],
-            article['date'],
-            article['body']
+            article['headline'], article['type'], json.dumps(article['countries']),
+            article['category'], article['date'], article['body']
         ))
-        if cursor.rowcount > 0:
-            new_articles_count += 1
+        if cursor.rowcount > 0: new_articles_count += 1
     conn.commit()
     return new_articles_count
 
 def get_all_articles_from_db(conn):
-    """Fetches all articles from the database, sorted by date."""
     cursor = conn.cursor()
     cursor.execute("SELECT headline, type, countries, category, date, body FROM articles ORDER BY date DESC")
     rows = cursor.fetchall()
     articles = []
     for row in rows:
         articles.append({
-            "headline": row[0],
-            "type": row[1],
-            "countries": json.loads(row[2]),
-            "category": row[3],
-            "date": row[4],
-            "body": row[5]
+            "headline": row[0], "type": row[1], "countries": json.loads(row[2]),
+            "category": row[3], "date": row[4], "body": row[5]
         })
     return articles
 
 # --- GITHUB AND API FUNCTIONS ---
-
+# ... (These functions are correct and do not need to be changed)
 def fetch_news():
-    """Fetches geopolitical news from GNews.io."""
     print("Fetching news from GNews.io...")
     url = f"https://gnews.io/api/v4/search?token={NEWS_API_KEY}"
     params = NEWS_API_CONFIG
@@ -117,15 +99,10 @@ def fetch_news():
     return response.json().get('articles', [])
 
 def reformat_with_gemini(raw_news_data):
-    """Feeds raw data into Gemini to reformat and extract risk data."""
-    if not raw_news_data:
-        return []
+    if not raw_news_data: return []
     print(f"Reformatting {len(raw_news_data)} articles with Gemini ({MODEL_NAME})...")
-    # Rename GNews 'title' field to 'headline' for consistency in the database
     for article in raw_news_data:
-        if 'title' in article:
-            article['headline'] = article.pop('title')
-
+        if 'title' in article: article['headline'] = article.pop('title')
     user_prompt = f"RAW NEWS ARTICLES:\n{json.dumps(raw_news_data, indent=2)}"
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel(
@@ -142,17 +119,14 @@ def reformat_with_gemini(raw_news_data):
         return None
 
 def get_file_from_github(repo, path, branch):
-    """Fetches a file from github and returns its content and sha."""
     try:
         file_content = repo.get_contents(path, ref=branch)
         return file_content.decoded_content, file_content.sha
     except GithubException as e:
-        if e.status == 404:
-            return None, None
+        if e.status == 404: return None, None
         raise
 
 def commit_file_to_github(repo, path, branch, content, sha):
-    """Commits a file to the repo."""
     commit_message = f"Automated Update for {os.path.basename(path)}: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
     if sha:
         repo.update_file(path, commit_message, content, sha, branch=branch)
@@ -164,7 +138,9 @@ if __name__ == "__main__":
     if not all([NEWS_API_KEY, GEMINI_API_KEY, GITHUB_PAT]):
         print("ERROR: One or more environment variables are missing.")
     else:
-        g = Github(GITHUB_PAT)
+        # Authenticate with GitHub using the modern method
+        auth = Auth.Token(GITHUB_PAT)
+        g = Github(auth=auth) # <-- UPDATED THIS LINE
         repo = g.get_repo(REPO_NAME)
         
         db_content, db_sha = get_file_from_github(repo, DB_FILE_PATH, BRANCH)
@@ -180,7 +156,6 @@ if __name__ == "__main__":
             processed_data = reformat_with_gemini(raw_news)
             if processed_data:
                 relevant_new_data = [item for item in processed_data if item.get('type') != 'irrelevant']
-                
                 if relevant_new_data:
                     newly_added_count = add_articles_to_db(conn, relevant_new_data)
                     print(f"Added {newly_added_count} new unique articles to the archive.")
