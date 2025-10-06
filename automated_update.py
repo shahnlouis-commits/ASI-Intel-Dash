@@ -23,18 +23,23 @@ SCHEMA_FILE = "schema.json"
 MODEL_NAME = "gemini-2.5-pro" # Upgraded for better classification
 
 # --- CLASSIFICATION RULES (Passed to Gemini as System Instruction) ---
+# In your automated_update.py file, update the instructions:
+
 CLASSIFICATION_INSTRUCTIONS = """
 You are a senior geopolitical risk analyst for a consulting firm. Your task is to classify raw news articles into a strict JSON format.
 Analyze the content and assign a single 'type' and 'category' based on the definitions below.
 
-TYPE CHOICES (Select ONE): ['high priority', 'medium priority', 'forecast alert', 'strategic watch']
+**CRITICAL RULE: If an article is not relevant to geopolitical or systemic risk (e.g., a local crime story, celebrity news, or a story about an unstable building), you MUST classify it with the type 'irrelevant'.**
 
-CATEGORY DEFINITIONS (Select ONE based on the primary risk driver):
+TYPE CHOICES (Select ONE): ['high priority', 'medium priority', 'forecast alert', 'strategic watch', 'irrelevant']
+
+CATEGORY DEFINITIONS (Select ONE based on the primary risk driver. Use 'n/a' for irrelevant articles):
 1. Economic Warfare & Control: Policy actions that use economic means (tariffs, sanctions, export controls, trade investigations) to exert geopolitical pressure.
 2. Geopolitical Instability: Risks from political conflict, state fragility, social unrest, wars, coups, or government collapses.
 3. Regulatory & Policy Shift: Major governmental or multilateral regulatory changes designed to shape markets and supply chains (e.g., new EU investment plans, critical mineral sourcing).
 4. Structural & Environmental Risk: Systemic threats to physical infrastructure, resources, and continuity (e.g., nuclear safety failures, labor disputes, resource scarcity, climate-driven risks).
 5. Security & Technology Threat: High-impact risks where the primary vector is digital or emerging technology (e.g., major cyberattacks on critical infrastructure, state-sponsored hacking, corporate espionage).
+6. n/a: Use this category only for articles with type 'irrelevant'.
 
 Your FINAL OUTPUT MUST be a valid JSON array strictly adhering to the provided JSON Schema. DO NOT include any text, headers, or explanations outside the JSON array.
 """
