@@ -19,20 +19,15 @@ jobs:
           python-version: '3.11'
           
       - name: 3. Install Python dependencies
-        run: pip install requests google-genai PyGithub jsonschema
+        run: pip install -r requirements.txt # Assuming you create a requirements.txt file
         
-      - name: 4. Debug Secrets Availability
-        run: |
-          if [ -z "${{ secrets.GH_TOKEN }}" ]; then
-            echo "Error: The GH_TOKEN secret is not available or is empty."
-            exit 1
-          else
-            echo "Success: The GH_TOKEN secret was found."
-          fi
-          
-      - name: 5. Execute Automated Update Script
+      - name: 4. Run the Seeding Script
+        # This step still runs your temporary script to create the archive.db file
         run: python seed_database.py
-        env:
-          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GITHUB_PAT: ${{ secrets.GH_TOKEN }}
+        
+      - name: 5. Commit the new database file
+        # This new step checks for any new or changed files and commits them
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Data: Seed historical article database"
+          file_pattern: "*.db" # Only commit the database file
