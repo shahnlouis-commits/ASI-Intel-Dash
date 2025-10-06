@@ -92,4 +92,111 @@ def add_articles_to_db(conn, articles):
 def get_all_articles_from_db(conn):
     """Fetches all articles from the database, sorted by date."""
     cursor = conn.cursor()
-    cursor.execute("SELECT headline, type, countries, category, date, body FROM
+    cursor.execute("SELECT headline, type, countries, category, date, body FROM articles ORDER BY date DESC")
+    rows = cursor.fetchall()
+    # Convert rows back to list of dictionaries
+    articles = []
+    for row in rows:
+        articles.append({
+            "headline": row[0],
+            "type": row[1],
+            "countries": json.loads(row[2]), # Convert JSON string back to list
+            "category": row[3],
+            "date": row[4],
+            "body": row[5]
+        })
+    return articles
+
+# --- GITHUB AND API FUNCTIONS ---
+
+def fetch_news():
+    """Fetches geopolitical news from Mediastack API."""
+    print("Fetching news from Mediastack...")
+    url = "http://api.mediastack.com/v1/news"
+    params = {**NEWS_QUERY_CONFIG, 'access_key': NEWS_API_KEY}
+    response = requests.get(url, params=params)
+    response.raise_for_status()
+    return response.json().get('data', [])
+
+
+def reformat_with_gemini(raw_news_data):
+    """Feeds raw data into Gemini to reformat and extract risk data."""
+    if not raw_news_data:
+        return []
+    print(f"Reformatting {len(raw_news_data)} articles with Gemini ({MODEL_NAME})...")
+    user_prompt = f"RAW NEWS ARTICLES:\n{json.dumps(raw_news_data, indent=2)}"
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel(
+        MODEL_NAME,
+        generation_config={"response_mime_type": "application/json"},
+        system_instruction=CLASSIFICATION_INSTRUCTIONS
+    )
+    response = model.generate_content(user_prompt)
+    try:
+        return json.loads(response.text.strip())
+    except json.JSONDecodeError:
+        print(f"CRITICAL ERROR: LLM failed to produce valid JSON.")
+        print(f"Raw LLM Output: {response.text}")
+        return None
+
+def get_file_from_github(repo, path, branch):
+    """Fetches a file from github and returns its content and sha."""
+    try:
+        file_content = repo.get_contents(path, ref=branch)
+        return file_content.decoded_content, file_content.sha
+    except GithubException as e:
+        if e.status == 404:
+            return None, None # File doesn't exist
+        raise
+
+def commit_file_to_github(repo, path, branch, content, sha):
+    """Commits a file to the repo."""
+    commit_message = f"Automated Update for {os.path.basename(path)}: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+    if sha:
+        repo.update_file(path, commit_message, content, sha, branch=branch)
+    else:
+        repo.create_file(path, commit_message, content, branch=branch)
+
+# --- MAIN EXECUTION ---
+if __name__ == "__main__":
+    if not all([NEWS_API_KEY, GEMINI_API_KEY, GITHUB_PAT]):
+        print("ERROR: One or more environment variables are missing.")
+    else:
+        g = Github(GITHUB_PAT)
+        repo = g.get_repo(REPO_NAME)
+        
+        db_content, db_sha = get_file_from_github(repo, DB_FILE_PATH, BRANCH)
+        if db_content:
+            with open("archive.db", "wb") as f:
+                f.write(db_content)
+        
+        conn = sqlite3.connect("archive.db")
+        init_db(conn)
+
+        raw_news = fetch_news()
+        if raw_news:
+            processed_data = reformat_with_gemini(raw_news)
+            if processed_data:
+                relevant_new_data = [item for item in processed_data if item.get('type') != 'irrelevant']
+                
+                if relevant_new_data:
+                    newly_added_count = add_articles_to_db(conn, relevant_new_data)
+                    print(f"Added {newly_added_count} new unique articles to the archive.")
+
+                    all_articles = get_all_articles_from_db(conn)
+                    live_json_data = all_articles[:LIVE_ARTICLE_LIMIT]
+                    
+                    _, json_sha = get_file_from_github(repo, JSON_FILE_PATH, BRANCH)
+                    commit_file_to_github(repo, JSON_FILE_PATH, BRANCH, json.dumps(live_json_data, indent=4), json_sha)
+                    print(f"Committed {len(live_json_data)} articles to {JSON_FILE_PATH}")
+
+                    with open("archive.db", "rb") as f:
+                        updated_db_content = f.read()
+                    commit_file_to_github(repo, DB_FILE_PATH, BRANCH, updated_db_content, db_sha)
+                    print(f"Committed updated archive database to {DB_FILE_PATH}")
+                else:
+                    print("No new relevant articles found. Skipping commit.")
+        else:
+            print("No new articles fetched from API. Skipping commit.")
+        
+        conn.close()
