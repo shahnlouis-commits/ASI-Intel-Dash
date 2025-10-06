@@ -2,3 +2,4 @@ PyGithub
 google-generativeai
 requests
 jsonschema
+google
