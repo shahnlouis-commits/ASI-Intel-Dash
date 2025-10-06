@@ -21,15 +21,7 @@ jobs:
       - name: 3. Install Python dependencies
         run: pip install -r requirements.txt
         
-      # ⬇️ ADD THESE NEW DEBUGGING STEPS ⬇️
-      - name: 4. DEBUG - Show requirements.txt content
-        run: cat requirements.txt
-        
-      - name: 5. DEBUG - List installed packages
-        run: pip list
-      # ⬆️                                     ⬆️
-        
-      - name: 6. Execute Automated Update Script # <-- Renumbered
+      - name: 4. Execute Automated Update Script
         run: python automated_update.py
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
