@@ -1,0 +1,27 @@
+{
+    "type": "array",
+    "description": "An array of classified geopolitical events.",
+    "items": {
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "string",
+                "description": "The determined priority level.",
+                "enum": ["high priority", "medium priority", "forecast alert", "strategic watch"]
+            },
+            "countries": {
+                "type": "array",
+                "items": {"type": "string", "description": "ISO 3166 alpha-2 country codes (e.g., US, RU)."}
+            },
+            "category": {
+                "type": "string",
+                "description": "The primary risk category.",
+                "enum": ["Economic Warfare & Control", "Geopolitical Instability", "Regulatory & Policy Shift", "Structural & Environmental Risk", "Security & Technology Threat"]
+            },
+            "date": {"type": "string", "format": "date-time", "description": "The publication date/time of the event."},
+            "headline": {"type": "string", "description": "The original article headline."},
+            "body": {"type": "string", "description": "A concise, 3-4 sentence summary of the event and its risk implications for a consultancy client."}
+        },
+        "required": ["type", "countries", "category", "date", "headline", "body"]
+    }
+}
