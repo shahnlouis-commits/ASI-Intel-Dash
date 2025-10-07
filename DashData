@@ -3,8 +3,8 @@
     "headline": "Luxury carmaker blames Trump tariffs as profits stall",
     "type": "Medium Priority",
     "countries": [
-      "GB",
-      "US"
+      "United Kingdom",
+      "United States"
     ],
     "category": "Economic Warfare & Control",
     "date": "2025-10-06",
@@ -14,7 +14,7 @@
     "headline": "Turkey pulls plug on Robbie Williams concert over safety fears",
     "type": "Strategic Watch",
     "countries": [
-      "TR"
+      "Turkey"
     ],
     "category": "Geopolitical Instability",
     "date": "2025-10-06",
@@ -24,7 +24,7 @@
     "headline": "Democrats want to reach young male voters. How to get them is up for debate",
     "type": "Strategic Watch",
     "countries": [
-      "US"
+      "United States"
     ],
     "category": "Regulatory & Policy Shift",
     "date": "2025-10-06",
@@ -34,7 +34,7 @@
     "headline": "Kisan Mazdoor Morcha demands compensation for flood-hit farmers, holds protest",
     "type": "Medium Priority",
     "countries": [
-      "IN"
+      "India"
     ],
     "category": "Geopolitical Instability",
     "date": "2025-10-06",
@@ -44,7 +44,7 @@
     "headline": "Portlanders are organizing a naked bike ride to protest Trump militarization of city",
     "type": "Medium Priority",
     "countries": [
-      "US"
+      "United States"
     ],
     "category": "Geopolitical Instability",
     "date": "2025-10-06",
@@ -54,8 +54,8 @@
     "headline": "India-US Trade Talks Intensify Amid Tariff Tensions",
     "type": "Medium Priority",
     "countries": [
-      "IN",
-      "US"
+      "India",
+      "United States"
     ],
     "category": "Economic Warfare & Control",
     "date": "2025-10-06",
@@ -65,7 +65,7 @@
     "headline": "Western Balkan Leaders Push for EU Integration Amid Geopolitical Tensions",
     "type": "Strategic Watch",
     "countries": [
-      "AL"
+      "Albania"
     ],
     "category": "Geopolitical Instability",
     "date": "2025-10-06",
@@ -75,7 +75,7 @@
     "headline": "Tories to scrap business rates on pubs and shops to boost high street",
     "type": "Strategic Watch",
     "countries": [
-      "GB"
+      "United Kingdom"
     ],
     "category": "Regulatory & Policy Shift",
     "date": "2025-10-06",
@@ -85,8 +85,8 @@
     "headline": "'India wants to see free, fair, inclusive and participatory election in Bangladesh'",
     "type": "Medium Priority",
     "countries": [
-      "IN",
-      "BD"
+      "India",
+      "Bangladesh"
     ],
     "category": "Geopolitical Instability",
     "date": "2025-10-06",
@@ -96,21 +96,11 @@
     "headline": "Few minorities broke into Syria's new political order in weekend election",
     "type": "High Priority",
     "countries": [
-      "SY"
+      "Syria"
     ],
     "category": "Geopolitical Instability",
     "date": "2025-10-06",
     "body": "Syria has held its first parliamentary elections following the ouster of Bashar Assad, revealing significant divisions among the country's religious and ethnic minorities. The election results indicate a failure to integrate these communities into the new political order, signaling a high risk of continued sectarian tension and political fragmentation. This fragile transition period poses substantial security and operational risks for any entity with interests in Syria or the immediate region."
-  },
-  {
-    "headline": "Trump’s tariff revenue could help keep the government open. Why isn’t that happening?",
-    "type": "High Priority",
-    "countries": [
-      "US"
-    ],
-    "category": "Regulatory & Policy Shift",
-    "date": "2025-10-06",
-    "body": "Amid an ongoing US government shutdown, questions are being raised about why record revenues from tariffs are not being used to fund government operations. This highlights a critical disconnect between US trade policy and fiscal management, underscored by deep political deadlock in Washington. The inability to resolve the shutdown signals significant governance risk and operational uncertainty that could impact market stability and federal contract continuity."
   },
 {
     "type": "Strategic Watch",
